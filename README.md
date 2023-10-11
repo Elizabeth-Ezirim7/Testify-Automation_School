@@ -1,2 +1,11 @@
 # Testify-Automation_School
-This is for everything that has to do with automation
+
+Test Repository for CI CD Course
+
+## Table of Content
+
+- Installation
+
+## Installation
+
+How to Install
