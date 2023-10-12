@@ -8,4 +8,4 @@ Test Repository for CI CD Course
 
 ## Installation
 
-How to Install automation tools
+How to Install
