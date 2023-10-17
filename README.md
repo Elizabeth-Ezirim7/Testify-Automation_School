@@ -8,4 +8,4 @@ Test Repository for CI CD Course
 
 ## Installation
 
-How to Install on Digital ocean
+How to Install
