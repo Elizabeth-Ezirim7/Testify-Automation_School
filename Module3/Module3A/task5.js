@@ -1,4 +1,7 @@
 
+//Task to display the current day of the week
+
+
 const day = 'Thursday';
 const position = 4;
 
