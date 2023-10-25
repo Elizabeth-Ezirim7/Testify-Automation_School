@@ -1,8 +1,8 @@
-//Area Of a Triangle
+//Area Of a Rectangle
 
-function calculateAreaofTriangle(length, width){
-    const product = length * width
-    console.log(product)
+function calculateAreaofRectangle(length, width){
+    const area = length * width;
+    console.log('The area of a rectangle is ' +area);
 }
-calculateAreaofTriangle(10, 30)
+calculateAreaofRectangle(10, 30);
 
