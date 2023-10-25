@@ -1,5 +1,5 @@
 
-//Area Of a Triangle 2
+//Area Of a Rectangle 2
 
 function calculateAreaofRectangle(length, width){
 
