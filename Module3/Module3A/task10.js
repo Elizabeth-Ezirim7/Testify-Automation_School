@@ -9,7 +9,7 @@ function calculateAreaofRectangle(length, width){
     
 }
 
-console.log('area of rectangle is ' +calculateAreaofRectangle(7, 5));
+console.log('Area of rectangle is ' +calculateAreaofRectangle(7, 25));
 
 
 

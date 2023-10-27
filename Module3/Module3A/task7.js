@@ -8,8 +8,8 @@ if(side1 === side2 && side2 === side3){
     console.log("Equilateral triangle");
 }
 else if (side1 === side2 || side1 === side3 || side2 === side3){
-    console.log('Isoceles triangle')
+    console.log('Isoceles triangle');
 } 
 else{
-    console.log('Scalene triangle')
+    console.log('Scalene triangle');
 }
