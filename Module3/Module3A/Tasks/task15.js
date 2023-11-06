@@ -49,6 +49,7 @@ const books = [
 
 for (let i = 0; i < books.length; i++) {
     if (books[i].reading === true) { //Strong equality check
+        
         console.log("Title: " + books[i].title); //Logs Title
         console.log('Description: '+ books[i].description); //Logs Description
         console.log("Number of Pages: " + books[i].numberOfPages); //Logs Number of pages
@@ -58,6 +59,5 @@ for (let i = 0; i < books.length; i++) {
     }
 } 
 
-  
     
 

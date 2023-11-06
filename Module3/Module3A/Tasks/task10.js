@@ -12,7 +12,6 @@ function calculateAreaofRectangle(length, width){
 console.log('Area of rectangle is ' +calculateAreaofRectangle(7, 25));
 
 
-
 /*area = calculateAreaofRectangle(20, 50);
 console.log(area);*/
 
