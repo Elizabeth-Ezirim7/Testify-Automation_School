@@ -1,7 +1,7 @@
 //Return the number of vowels in a string
 
 function vowelsCount(vowStr) {
-    let vowels = 'aeiou'
+    let vowels = 'aeiouAEIOU'
     let count = 0;
 
   for(let i = 0; i< vowStr.length; i++) {
@@ -16,6 +16,6 @@ function vowelsCount(vowStr) {
 
 }
 
-const vowelsCountString = 'Return the number of vowels in a string'
+const vowelsCountString = 'Return the number Of vowels in A string'
 
 console.log('The number of vowels in this string is ' + vowelsCount(vowelsCountString));
