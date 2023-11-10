@@ -10,4 +10,4 @@ for(let i = 0; i < arrayOfNum.length; i++){
 
 }
 
-console.log(sum)
+console.log('The answer is ' +sum)

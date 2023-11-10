@@ -12,6 +12,6 @@ function lengthConverter(kilometre){
 
 const metresValue = lengthConverter(10)
 
-console.log(metresValue)
+console.log(metresValue + 'km')
     
 
