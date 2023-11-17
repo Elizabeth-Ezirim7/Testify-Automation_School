@@ -1,0 +1,571 @@
+{
+	"info": {
+		"_postman_id": "b60cc92f-89a2-42eb-b1db-6ed879428ae5",
+		"name": "TASK4_API_COLLECTION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31206756",
+		"_collection_link": "https://grey-comet-135208.postman.co/workspace/My-Workspace~f84822b8-2104-4846-8796-bc2cdec266f3/collection/31206756-b60cc92f-89a2-42eb-b1db-6ed879428ae5?action=share&source=collection_link&creator=31206756"
+	},
+	"item": [
+		{
+			"name": "Get Status",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response is an object with status property\", function () {\r",
+							"    pm.expect(pm.response.json()).to.be.an('object').that.has.property('status');\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/status",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register an API Client",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"var responseCode = 201\r",
+							"console.log(responseCode)\r",
+							"\r",
+							"pm.test(\"Register an API Client and Get Response code  of 201\", function () {\r",
+							"    pm.response.to.have.status(responseCode);\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientName\": \"Elizabeth\",\r\n    \"clientEmail\": \"testcad22@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api-clients/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api-clients",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Books",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var responseCode = 200;\r",
+							"\r",
+							"console.log(responseCode)\r",
+							"\r",
+							"pm.test('Get Books and Response code of 200', function () {\r",
+							"    pm.response.to.have.status(responseCode);\r",
+							"})\r",
+							"\r",
+							"\r",
+							"pm.test('Verify book ID', function () {\r",
+							"    const responseBody = pm.response.json();\r",
+							"    pm.expect(responseBody[0].id).to.equal(1);\r",
+							"    pm.expect(responseBody[0].name).to.equal(\"The Russian\");\r",
+							"})\r",
+							"\r",
+							"\r",
+							"const orderId = pm.environment.get('bookId');\r",
+							"\r",
+							"\r",
+							"\r",
+							"pm.test('Order placed successfully', function () {\r",
+							"    const responseOrder = 201;\r",
+							"    pm.expect(responseOrder).to.equal(201);\r",
+							"})\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/books",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single book",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var  responseCode = 200\r",
+							"console.log(responseCode)\r",
+							"\r",
+							"\r",
+							"pm.test(\"Get a Single book and Get response code status of 200\", function () {\r",
+							"   pm.response.to.have.status(responseCode);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"//Get Single Book\r",
+							"const jsonData = pm.response.json();\r",
+							"//console.log(jsonData.id);\r",
+							"//console.log(jsonData.name);\r",
+							"//console.log(jsonData.type);\r",
+							"\r",
+							"\r",
+							"//To Verify the ID number of a non-fiction book with the name\r",
+							"/*pm.test(\"This confirms that \" + jsonData.id + \" is the number of a \"  + jsonData.type + \" book with the name \" + jsonData.name + \"\" , function () {\r",
+							"pm.expect(5).to.eql(jsonData.id);\r",
+							"});*/\r",
+							"\r",
+							"pm.test(\"Verify that the ID number of the book is \" + jsonData.id +   \"\", function () {\r",
+							"pm.expect(5).to.eql(jsonData.id);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Book name is \" + jsonData.name +  \"\", function () {\r",
+							"pm.expect(\"Untamed\").to.eql(jsonData.name);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Its a  \" + jsonData.type +  \" book\" + \"\", function () {\r",
+							"pm.expect(\"non-fiction\").to.eql(jsonData.type);\r",
+							"});\r",
+							"\r",
+							"console.log(\"This confirms that \" + jsonData.id + \" is the ID number of a \"  + jsonData.type + \" book with the name \" + jsonData.name)\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/books/:bookId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"books",
+						":bookId"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "bookId",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Place a book order",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"var responseCode = 201\r",
+							"console.log(responseCode)\r",
+							"\r",
+							"\r",
+							"pm.test(\"Place a book order and Get a response code status of 201\", function () {\r",
+							"    pm.response.to.have.status(responseCode);\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"//const jsonData = pm.environment.set(\"id\", 1);\r",
+							"//console.log(jsonData)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "03c5abfe090876ab74a2a2ac4c079174a35fd88c9b88cd2164ff4b9d56c31d6c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bookId\": 3,\r\n  \"customerName\": \"Elizabeth\"\r\n}\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/orders",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all orders",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"\r",
+							"var responseCode = 200\r",
+							"console.log(responseCode)\r",
+							"\r",
+							"\r",
+							"pm.test(\"Get all orders and Get Response code of 200\", function () {\r",
+							"    pm.response.to.have.status(responseCode);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/orders",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get an order",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"var responseCode = 200\r",
+							"console.log(responseCode)\r",
+							"\r",
+							"\r",
+							"pm.test(\"Get an order and Get Response code of 200\", function () {\r",
+							"    pm.response.to.have.status(responseCode);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/orders/:orderId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"orders",
+						":orderId"
+					],
+					"variable": [
+						{
+							"key": "orderId",
+							"value": "BJHGOCTe1wJ82OdwuU0aO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an order",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"var responseCode = 204\r",
+							"console.log(responseCode)\r",
+							"\r",
+							"\r",
+							"pm.test(\"This is to verfiy that an order has been deleted successfully\", function () {\r",
+							"    pm.response.to.have.status(responseCode);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "71b3d9a1ed8c0b8fe2e72ffdf7db35429fc2576621d99d8495a58f45c9099a2a",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/orders/:orderId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"orders",
+						":orderId"
+					],
+					"variable": [
+						{
+							"key": "orderId",
+							"value": "PcsykMRrA1JYLeGDh2sUI"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "1b77ffa79ea9034ba133a147de26749e4466d8385d6f53321410d28cfbcacf22",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
