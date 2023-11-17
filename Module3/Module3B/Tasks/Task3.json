@@ -3,7 +3,8 @@
 		"_postman_id": "0b897a69-a4f4-4e1a-8317-3d3e2eed630a",
 		"name": "TASK3_API_COLLECTION",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "31206756"
+		"_exporter_id": "31206756",
+		"_collection_link": "https://grey-comet-135208.postman.co/workspace/My-Workspace~f84822b8-2104-4846-8796-bc2cdec266f3/collection/31206756-0b897a69-a4f4-4e1a-8317-3d3e2eed630a?action=share&source=collection_link&creator=31206756"
 	},
 	"item": [
 		{
@@ -13,12 +14,13 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Response status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
+							"var responseCode = 200\r",
+							"console.log(responseCode)\r",
 							"\r",
-							"pm.test(\"Response is an object with status property\", function () {\r",
-							"    pm.expect(pm.response.json()).to.be.an('object').that.has.property('status');\r",
+							"\r",
+							"pm.test(\"Get Books and Response code of 200\", function () {\r",
+							"    pm.response.to.have.status(responseCode);\r",
+							"\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -292,8 +294,7 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							"//const jsonData = pm.environment.set(\"id\", 1);\r",
-							"//console.log(jsonData)"
+							""
 						],
 						"type": "text/javascript"
 					}

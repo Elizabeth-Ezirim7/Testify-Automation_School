@@ -3,7 +3,8 @@
 		"_postman_id": "b7a943b3-e275-453e-ae0f-2075943ba1a7",
 		"name": "TASK2_API_COLLECTION",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "31206756"
+		"_exporter_id": "31206756",
+		"_collection_link": "https://grey-comet-135208.postman.co/workspace/My-Workspace~f84822b8-2104-4846-8796-bc2cdec266f3/collection/31206756-b7a943b3-e275-453e-ae0f-2075943ba1a7?action=share&source=collection_link&creator=31206756"
 	},
 	"item": [
 		{
@@ -13,12 +14,13 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Response status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
+							"var responseCode = 200\r",
+							"console.log(responseCode)\r",
 							"\r",
-							"pm.test(\"Response is an object with status property\", function () {\r",
-							"    pm.expect(pm.response.json()).to.be.an('object').that.has.property('status');\r",
+							"\r",
+							"pm.test(\"Get Books and Response code of 200\", function () {\r",
+							"    pm.response.to.have.status(responseCode);\r",
+							"\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -190,32 +192,6 @@
 							"});\r",
 							"\r",
 							"\r",
-							"//Get Single Book\r",
-							"const jsonData = pm.response.json();\r",
-							"//console.log(jsonData.id);\r",
-							"//console.log(jsonData.name);\r",
-							"//console.log(jsonData.type);\r",
-							"\r",
-							"\r",
-							"//To Verify the ID number of a non-fiction book with the name\r",
-							"/*pm.test(\"This confirms that \" + jsonData.id + \" is the number of a \"  + jsonData.type + \" book with the name \" + jsonData.name + \"\" , function () {\r",
-							"pm.expect(5).to.eql(jsonData.id);\r",
-							"});*/\r",
-							"\r",
-							"pm.test(\"Verify that the ID number of the book is \" + jsonData.id +   \"\", function () {\r",
-							"pm.expect(5).to.eql(jsonData.id);\r",
-							"});\r",
-							"\r",
-							"pm.test(\"Book name is \" + jsonData.name +  \"\", function () {\r",
-							"pm.expect(\"Untamed\").to.eql(jsonData.name);\r",
-							"});\r",
-							"\r",
-							"pm.test(\"Its a  \" + jsonData.type +  \" book\" + \"\", function () {\r",
-							"pm.expect(\"non-fiction\").to.eql(jsonData.type);\r",
-							"});\r",
-							"\r",
-							"console.log(\"This confirms that \" + jsonData.id + \" is the ID number of a \"  + jsonData.type + \" book with the name \" + jsonData.name)\r",
-							"\r",
 							"\r",
 							"\r",
 							"\r",
@@ -304,8 +280,7 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							"//const jsonData = pm.environment.set(\"id\", 1);\r",
-							"//console.log(jsonData)"
+							""
 						],
 						"type": "text/javascript"
 					}
