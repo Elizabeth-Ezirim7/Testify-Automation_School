@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "0b897a69-a4f4-4e1a-8317-3d3e2eed630a",
-		"name": "TASK3_API_COLLECTION",
+		"_postman_id": "b60cc92f-89a2-42eb-b1db-6ed879428ae5",
+		"name": "TASK4_API_COLLECTION",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "31206756",
-		"_collection_link": "https://grey-comet-135208.postman.co/workspace/My-Workspace~f84822b8-2104-4846-8796-bc2cdec266f3/collection/31206756-0b897a69-a4f4-4e1a-8317-3d3e2eed630a?action=share&source=collection_link&creator=31206756"
+		"_collection_link": "https://grey-comet-135208.postman.co/workspace/My-Workspace~f84822b8-2104-4846-8796-bc2cdec266f3/collection/31206756-b60cc92f-89a2-42eb-b1db-6ed879428ae5?action=share&source=collection_link&creator=31206756"
 	},
 	"item": [
 		{
@@ -21,7 +21,9 @@
 							"pm.test(\"Get Books and Response code of 200\", function () {\r",
 							"    pm.response.to.have.status(responseCode);\r",
 							"\r",
-							"});"
+							"});\r",
+							"\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -79,7 +81,22 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							""
+							"\r",
+							"function generateRandomString(length) {\r",
+							"    var result = '';\r",
+							"    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';\r",
+							"    var charactersLength = characters.length;\r",
+							"    for (var i = 0; i < length; i++) {\r",
+							"        result += characters.charAt(Math.floor(Math.random() * charactersLength));\r",
+							"    }\r",
+							"    return result;\r",
+							"}\r",
+							"\r",
+							"var email = generateRandomString(5) + \"@yopmail.com\";\r",
+							"\r",
+							"pm.environment.set(\"myEmail\", email);\r",
+							"\r",
+							"console.log(`myEmail: ${email}`);"
 						],
 						"type": "text/javascript"
 					}
@@ -87,13 +104,20 @@
 			],
 			"request": {
 				"auth": {
-					"type": "noauth"
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d2dcd9fdde1140ab1e6b0d8a85248e5f28672471862cba6ac75836828ec2e563",
+							"type": "string"
+						}
+					]
 				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"clientName\": \"Elizabeth\",\r\n    \"clientEmail\": \"testcad22@gmail.com\"\r\n}",
+					"raw": "{\r\n    \"clientName\": \"Elizabeth\",\r\n    \"clientEmail\": \"{{myEmail}}\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -120,16 +144,24 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"\r",
-							"var responseCode = 200\r",
-							"console.log(responseCode)\r",
-							"\r",
+							"var responseCode = 200;\r",
+							"console.log(responseCode);\r",
 							"\r",
 							"pm.test(\"Get Books and Response code of 200\", function () {\r",
 							"    pm.response.to.have.status(responseCode);\r",
-							"\r",
 							"});\r",
 							"\r",
+							"let books = pm.response.json();\r",
+							"let targetBookName = \"The Russian\";\r",
+							"let targetBook = books.find(book => book.name === targetBookName);\r",
+							"\r",
+							"if (targetBook) {\r",
+							"    pm.environment.set(\"bookId\", targetBook.id);\r",
+							"    console.log(\"Book id for \" + targetBookName + \" is : \" + targetBook.id);\r",
+							"} \r",
+							"else {\r",
+							"    console.log(`Book with name ${targetBookName} not found`);\r",
+							"}\r",
 							"\r",
 							"\r",
 							"\r",
@@ -284,6 +316,25 @@
 							"    pm.response.to.have.status(responseCode);\r",
 							"});\r",
 							"\r",
+							"pm.test('Order placed successfully', function () {\r",
+							"    const responseOrder = 201;\r",
+							"    pm.expect(responseOrder).to.equal(201);\r",
+							"})\r",
+							"\r",
+							"const responseJson = pm.response.json();\r",
+							"\r",
+							"const orderId = responseJson.orderId\r",
+							"\r",
+							"pm.environment.set(\"myOrderId\", orderId);\r",
+							"\r",
+							"\r",
+							"//\r",
+							"pm.test(\"Verify ID from the response body\", function () {\r",
+							"    \r",
+							"    pm.expect(responseJson.orderId).to.not.eql(null);\r",
+							"});\r",
+							"\r",
+							"console.log(\" My Order Number Id: \" + orderId);\r",
 							"\r",
 							""
 						],
@@ -311,7 +362,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"bookId\": 3,\r\n  \"customerName\": \"Elizabeth\"\r\n}\r\n\r\n\r\n",
+					"raw": "{\r\n  \"bookId\": \"{{bookId}}\",\r\n  \"customerName\": \"Elizabeth\"\r\n}\r\n\r\n\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -346,6 +397,16 @@
 							"pm.test(\"Get all orders and Get Response code of 200\", function () {\r",
 							"    pm.response.to.have.status(responseCode);\r",
 							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"const responseJson = pm.response.json();\r",
+							"\r",
+							"const id = responseJson.id\r",
+							"\r",
+							"pm.environment.set(\"OrderNumber\", id);\r",
+							"\r",
+							"console.log(\"Order Number is: \" + id);\r",
 							"\r",
 							""
 						],
@@ -396,14 +457,32 @@
 					"listen": "test",
 					"script": {
 						"exec": [
+							"var responseCode = 200;\r",
 							"\r",
-							"var responseCode = 200\r",
 							"console.log(responseCode)\r",
 							"\r",
-							"\r",
-							"pm.test(\"Get an order and Get Response code of 200\", function () {\r",
+							"pm.test('Get an order and Get Response code of 200', function () {\r",
 							"    pm.response.to.have.status(responseCode);\r",
+							"})\r",
+							"\r",
+							"const jsonData = pm.response.json();\r",
+							"\r",
+							"const customerName = jsonData.customerName;\r",
+							"\r",
+							"console.log(jsonData)\r",
+							"\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    pm.environment.set(\"myOrderId\", jsonData.id);\r",
 							"});\r",
+							"\r",
+							"pm.test('Verify Customer Name', function () {\r",
+							"    pm.expect(customerName).to.eql(customerName);\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    pm.environment.set(\"myOrderId\", jsonData.id);\r",
+							"});\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -446,7 +525,7 @@
 					"variable": [
 						{
 							"key": "orderId",
-							"value": "3nV1igl_Zz_NfjtBgZMQN"
+							"value": "{{myOrderId}}"
 						}
 					]
 				}
@@ -464,10 +543,13 @@
 							"var responseCode = 204\r",
 							"console.log(responseCode)\r",
 							"\r",
-							"\r",
 							"pm.test(\"This is to verfiy that an order has been deleted successfully\", function () {\r",
 							"    pm.response.to.have.status(responseCode);\r",
 							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -484,16 +566,6 @@
 				}
 			],
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "71b3d9a1ed8c0b8fe2e72ffdf7db35429fc2576621d99d8495a58f45c9099a2a",
-							"type": "string"
-						}
-					]
-				},
 				"method": "DELETE",
 				"header": [],
 				"body": {
@@ -517,7 +589,7 @@
 					"variable": [
 						{
 							"key": "orderId",
-							"value": "3nV1igl_Zz_NfjtBgZMQN"
+							"value": "{{myOrderId}}"
 						}
 					]
 				}
@@ -530,7 +602,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "1b77ffa79ea9034ba133a147de26749e4466d8385d6f53321410d28cfbcacf22",
+				"value": "{{accessToken}}",
 				"type": "string"
 			}
 		]
@@ -553,6 +625,43 @@
 					""
 				]
 			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "https://simple-books-api.glitch.me",
+			"type": "string"
+		},
+		{
+			"key": "accessToken",
+			"value": "8ee722794ff0279a394a33445edd0a4c58ed32e3c8c44f1b84496a02907cb0d1",
+			"type": "string"
+		},
+		{
+			"key": "bookId",
+			"value": "1",
+			"type": "string"
+		},
+		{
+			"key": "myOrderId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "myEmail",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "orderNumber",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "id ",
+			"value": "",
+			"type": "string"
 		}
 	]
 }

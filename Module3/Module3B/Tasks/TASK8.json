@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "0b897a69-a4f4-4e1a-8317-3d3e2eed630a",
-		"name": "TASK3_API_COLLECTION",
+		"_postman_id": "ae56b539-55f5-444c-816d-735b5bd80e99",
+		"name": "TASK8_API_COLLECTION",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "31206756",
-		"_collection_link": "https://grey-comet-135208.postman.co/workspace/My-Workspace~f84822b8-2104-4846-8796-bc2cdec266f3/collection/31206756-0b897a69-a4f4-4e1a-8317-3d3e2eed630a?action=share&source=collection_link&creator=31206756"
+		"_collection_link": "https://grey-comet-135208.postman.co/workspace/My-Workspace~f84822b8-2104-4846-8796-bc2cdec266f3/collection/31206756-ae56b539-55f5-444c-816d-735b5bd80e99?action=share&source=collection_link&creator=31206756"
 	},
 	"item": [
 		{
@@ -21,7 +21,9 @@
 							"pm.test(\"Get Books and Response code of 200\", function () {\r",
 							"    pm.response.to.have.status(responseCode);\r",
 							"\r",
-							"});"
+							"});\r",
+							"\r",
+							"postman.setNextRequest(\"Place a book order\")"
 						],
 						"type": "text/javascript"
 					}
@@ -79,21 +81,33 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							""
+							"\r",
+							"function generateRandomString(length) {\r",
+							"    var result = '';\r",
+							"    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';\r",
+							"    var charactersLength = characters.length;\r",
+							"    for (var i = 0; i < length; i++) {\r",
+							"        result += characters.charAt(Math.floor(Math.random() * charactersLength));\r",
+							"    }\r",
+							"    return result;\r",
+							"}\r",
+							"\r",
+							"var email = generateRandomString(5) + \"@yopmail.com\";\r",
+							"\r",
+							"pm.environment.set(\"myEmail\", email);\r",
+							"\r",
+							"console.log(`myEmail: ${email}`);"
 						],
 						"type": "text/javascript"
 					}
 				}
 			],
 			"request": {
-				"auth": {
-					"type": "noauth"
-				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"clientName\": \"Elizabeth\",\r\n    \"clientEmail\": \"testcad22@gmail.com\"\r\n}",
+					"raw": "{\r\n    \"clientName\": \"Elizabeth\",\r\n    \"clientEmail\": \"{{myEmail}}\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -120,22 +134,24 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"\r",
-							"var responseCode = 200\r",
-							"console.log(responseCode)\r",
-							"\r",
+							"var responseCode = 200;\r",
+							"console.log(responseCode);\r",
 							"\r",
 							"pm.test(\"Get Books and Response code of 200\", function () {\r",
 							"    pm.response.to.have.status(responseCode);\r",
-							"\r",
 							"});\r",
 							"\r",
+							"let books = pm.response.json();\r",
+							"let targetBookName = \"The Russian\";\r",
+							"let targetBook = books.find(book => book.name === targetBookName);\r",
 							"\r",
-							"\r",
-							"\r",
-							"\r",
-							"\r",
-							"\r",
+							"if (targetBook) {\r",
+							"    pm.environment.set(\"bookId\", targetBook.id);\r",
+							"    console.log(\"Book id for \" + targetBookName + \" is : \" + targetBook.id);\r",
+							"} \r",
+							"else {\r",
+							"    console.log(`Book with name ${targetBookName} not found`);\r",
+							"}\r",
 							"\r",
 							""
 						],
@@ -212,6 +228,7 @@
 							"\r",
 							"\r",
 							"\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -284,6 +301,24 @@
 							"    pm.response.to.have.status(responseCode);\r",
 							"});\r",
 							"\r",
+							"const responseJson = pm.response.json();\r",
+							"\r",
+							"const orderId = responseJson.orderId\r",
+							"\r",
+							"pm.environment.set(\"myOrderId\", orderId);\r",
+							"\r",
+							"\r",
+							"//\r",
+							"pm.test(\"Verify ID from the response body\", function () {\r",
+							"    \r",
+							"    pm.expect(responseJson.orderId).to.not.eql(null);\r",
+							"});\r",
+							"\r",
+							"console.log(\" My Order Number Id: \" + orderId);\r",
+							"\r",
+							"\r",
+							"postman.setNextRequest(null)\r",
+							"\r",
 							"\r",
 							""
 						],
@@ -311,7 +346,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"bookId\": 3,\r\n  \"customerName\": \"Elizabeth\"\r\n}\r\n\r\n\r\n",
+					"raw": "{\r\n  \"bookId\": \"{{bookId}}\",\r\n  \"customerName\": \"Elizabeth\"\r\n}\r\n\r\n\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -396,14 +431,22 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"\r",
-							"var responseCode = 200\r",
-							"console.log(responseCode)\r",
-							"\r",
+							"var responseCode = 200;\r",
+							"console.log(responseCode);\r",
 							"\r",
 							"pm.test(\"Get an order and Get Response code of 200\", function () {\r",
 							"    pm.response.to.have.status(responseCode);\r",
 							"});\r",
+							"\r",
+							"/*var jsonData = pm.response.json();\r",
+							"const id = pm.environment.get(\"orderId\");\r",
+							"\r",
+							"pm.test(\"Yerify ID\", function () {\r",
+							"   \r",
+							"    pm.expect(jsonData.id).to.not.eql(null);\r",
+							"});\r",
+							"console.log(jsonData.id)*/\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -446,7 +489,7 @@
 					"variable": [
 						{
 							"key": "orderId",
-							"value": "3nV1igl_Zz_NfjtBgZMQN"
+							"value": "{{myOrderId}}"
 						}
 					]
 				}
@@ -468,6 +511,7 @@
 							"pm.test(\"This is to verfiy that an order has been deleted successfully\", function () {\r",
 							"    pm.response.to.have.status(responseCode);\r",
 							"});\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -517,7 +561,7 @@
 					"variable": [
 						{
 							"key": "orderId",
-							"value": "3nV1igl_Zz_NfjtBgZMQN"
+							"value": "pNGFaByqcEq1u7tlGCDCR"
 						}
 					]
 				}
@@ -553,6 +597,40 @@
 					""
 				]
 			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_Url",
+			"value": "https://simple-books-api.glitch.me",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "bookId",
+			"value": "1",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "orderNum",
+			"value": "027Pe1CoqRZCuaPwDrR6z",
+			"disabled": true
+		},
+		{
+			"key": "deleteOrder",
+			"value": "027Pe1CoqRZCuaPwDrR6z",
+			"disabled": true
+		},
+		{
+			"key": "orderId",
+			"value": "",
+			"disabled": true
+		},
+		{
+			"key": "myOrderId",
+			"value": "pNGFaByqcEq1u7tlGCDCR",
+			"disabled": true
 		}
 	]
 }
