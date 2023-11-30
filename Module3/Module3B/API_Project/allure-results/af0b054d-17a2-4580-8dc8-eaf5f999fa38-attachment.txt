@@ -1,0 +1,1 @@
+{"code":"missing_parameter","message":"Either the listIds or segmentIds are mandatory in recipients"}

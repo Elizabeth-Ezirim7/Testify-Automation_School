@@ -1,0 +1,1 @@
+{"id":"656919a52685911c20617308","name":"EmojiTrain.PNG","authorId":"655b2b6a37d1815642496c9d","companyId":"656073344c0645730170cef9","dealId":"000000000000000000000000","contactId":0,"size":92584,"createdAt":"2023-11-30T23:24:21.922874411Z"}

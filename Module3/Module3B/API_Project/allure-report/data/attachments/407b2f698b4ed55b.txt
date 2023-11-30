@@ -1,0 +1,1 @@
+{"url":"http://requestb.in/lzj7uvxg","id":934713,"description":"test for SMS","events":["delivered"],"type":"marketing","createdAt":"2023-12-01T00:25:01.000+01:00","modifiedAt":"2023-12-01T00:25:01.000+01:00"}

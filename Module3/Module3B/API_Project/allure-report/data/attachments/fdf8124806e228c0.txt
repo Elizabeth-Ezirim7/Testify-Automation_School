@@ -1,0 +1,1 @@
+{"code":"out_of_range","message":"Sender name should not be greater than 15 characters"}

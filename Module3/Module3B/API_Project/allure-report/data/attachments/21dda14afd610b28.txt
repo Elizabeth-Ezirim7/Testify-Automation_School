@@ -1,0 +1,250 @@
+{
+    "items": [
+        {
+            "id": "655f4ea2d702943b022c66b2",
+            "taskTypeId": "655b2b95a913dfc90f6166b3",
+            "name": "To do",
+            "contactsIds": [],
+            "dealsIds": [
+                "655f4ea2638e3c2e6009efe4"
+            ],
+            "companiesIds": [],
+            "priority": false,
+            "createdAt": "2023-11-23T13:07:46.750Z"
+        },
+        {
+            "id": "655fdb55c70088a3d04c271f",
+            "taskTypeId": "655b2b95a913dfc90f6166b5",
+            "name": "Lunch",
+            "contactsIds": [],
+            "dealsIds": [],
+            "companiesIds": [],
+            "priority": false,
+            "createdAt": "2023-11-23T23:08:05.950Z"
+        },
+        {
+            "id": "655fdb92a84c990fc3708de4",
+            "taskTypeId": "655b2b95a913dfc90f6166b5",
+            "name": "Lunch",
+            "contactsIds": null,
+            "dealsIds": null,
+            "companiesIds": null,
+            "priority": false,
+            "createdAt": "2023-11-23T23:09:06.916Z"
+        },
+        {
+            "id": "65645d434c0efd3f4d78dbd7",
+            "taskTypeId": "655b2b95a913dfc90f6166b5",
+            "name": "Lunch",
+            "contactsIds": null,
+            "dealsIds": null,
+            "companiesIds": null,
+            "priority": false,
+            "createdAt": "2023-11-27T09:11:31.327Z"
+        },
+        {
+            "id": "65645dea1588da07706f62b4",
+            "taskTypeId": "655b2b95a913dfc90f6166b5",
+            "name": "Lunch",
+            "contactsIds": null,
+            "dealsIds": null,
+            "companiesIds": null,
+            "priority": false,
+            "createdAt": "2023-11-27T09:14:18.595Z"
+        },
+        {
+            "id": "65645dfb54566c32ed0daea6",
+            "taskTypeId": "655b2b95a913dfc90f6166b5",
+            "name": "Lunch",
+            "contactsIds": null,
+            "dealsIds": null,
+            "companiesIds": null,
+            "priority": false,
+            "createdAt": "2023-11-27T09:14:35.488Z"
+        },
+        {
+            "id": "65645e06937d6c2fb439a456",
+            "taskTypeId": "655b2b95a913dfc90f6166b5",
+            "name": "Lunch",
+            "contactsIds": null,
+            "dealsIds": null,
+            "companiesIds": null,
+            "priority": false,
+            "createdAt": "2023-11-27T09:14:46.430Z"
+        },
+        {
+            "id": "65645e1c4b7def3f0d7d76c4",
+            "taskTypeId": "655b2b95a913dfc90f6166b5",
+            "name": "Lunch",
+            "contactsIds": null,
+            "dealsIds": null,
+            "companiesIds": null,
+            "priority": false,
+            "createdAt": "2023-11-27T09:15:08.872Z"
+        },
+        {
+            "id": "65645e7f73e49e12884c35b6",
+            "taskTypeId": "655b2b95a913dfc90f6166b5",
+            "name": "Lunch",
+            "contactsIds": null,
+            "dealsIds": null,
+            "companiesIds": null,
+            "priority": false,
+            "createdAt": "2023-11-27T09:16:47.576Z"
+        },
+        {
+            "id": "656465b0f9d4bd1ee02e5564",
+            "taskTypeId": "655b2b95a913dfc90f6166b5",
+            "name": "Lunch",
+            "contactsIds": null,
+            "dealsIds": null,
+            "companiesIds": null,
+            "priority": false,
+            "createdAt": "2023-11-27T09:47:29.125Z"
+        },
+        {
+            "id": "655fafbaab1b1e06aef6c9fe",
+            "taskTypeId": "655b2b95a913dfc90f6166b2",
+            "name": "Call",
+            "contactsIds": [],
+            "dealsIds": [],
+            "companiesIds": [],
+            "priority": false,
+            "createdAt": "2023-11-23T20:02:02.477Z"
+        },
+        {
+            "id": "655fafe1c70088a3d04c26ab",
+            "taskTypeId": "655b2b95a913dfc90f6166b2",
+            "name": "Call",
+            "contactsIds": [],
+            "dealsIds": [],
+            "companiesIds": [],
+            "priority": false,
+            "createdAt": "2023-11-23T20:02:41.444Z"
+        },
+        {
+            "id": "655faff99c454d720a2a3924",
+            "taskTypeId": "655b2b95a913dfc90f6166b2",
+            "name": "Call",
+            "contactsIds": null,
+            "dealsIds": null,
+            "companiesIds": null,
+            "priority": false,
+            "createdAt": "2023-11-23T20:03:06.241Z"
+        },
+        {
+            "id": "655fb0015099df2aa36cde09",
+            "taskTypeId": "655b2b95a913dfc90f6166b2",
+            "name": "Call",
+            "contactsIds": null,
+            "dealsIds": null,
+            "companiesIds": null,
+            "priority": false,
+            "createdAt": "2023-11-23T20:03:13.875Z"
+        },
+        {
+            "id": "655fdb382196a5146f12d3d5",
+            "taskTypeId": "655b2b95a913dfc90f6166b2",
+            "name": "Call",
+            "contactsIds": null,
+            "dealsIds": null,
+            "companiesIds": null,
+            "priority": false,
+            "createdAt": "2023-11-23T23:07:36.942Z"
+        },
+        {
+            "id": "655f71864c0645730170ca6b",
+            "taskTypeId": "655b2b95a913dfc90f6166b1",
+            "name": "Send an email now",
+            "contactsIds": [
+                5
+            ],
+            "dealsIds": [
+                "655fda4d4d83740dfe4308f8"
+            ],
+            "companiesIds": [
+                "656073344c0645730170cef9"
+            ],
+            "priority": true,
+            "createdAt": "2023-11-27T09:51:14.762Z"
+        },
+        {
+            "id": "655f7212bebd778ef63f2dfd",
+            "taskTypeId": "655b2b95a913dfc90f6166b4",
+            "name": "Meeting is now",
+            "contactsIds": [
+                1
+            ],
+            "dealsIds": [
+                "655f4ea2638e3c2e6009efe4",
+                "655f66b8e122b6bf37823d06"
+            ],
+            "companiesIds": [
+                "655f4e96c70088a3d04c238d"
+            ],
+            "priority": false,
+            "createdAt": "2023-11-27T09:54:19.039Z"
+        },
+        {
+            "id": "6564678854566c32ed0daea7",
+            "taskTypeId": "655b2b95a913dfc90f6166b4",
+            "name": "Meeting is now",
+            "contactsIds": [
+                1
+            ],
+            "dealsIds": [
+                "655f4ea2638e3c2e6009efe4",
+                "655f66b8e122b6bf37823d06"
+            ],
+            "companiesIds": [
+                "655f4e96c70088a3d04c238d"
+            ],
+            "priority": false,
+            "createdAt": "2023-11-27T09:55:42.068Z"
+        },
+        {
+            "id": "656467dc6f452a1dfb129f86",
+            "taskTypeId": "655b2b95a913dfc90f6166b4",
+            "name": "Meeting is now",
+            "contactsIds": [
+                1
+            ],
+            "dealsIds": [
+                "655f4ea2638e3c2e6009efe4",
+                "655f66b8e122b6bf37823d06"
+            ],
+            "companiesIds": [
+                "655f4e96c70088a3d04c238d"
+            ],
+            "priority": false,
+            "createdAt": "2023-11-27T09:56:51.114Z"
+        },
+        {
+            "id": "65646806453cbd39852007a5",
+            "taskTypeId": "655b2b95a913dfc90f6166b4",
+            "name": "Meeting is now",
+            "contactsIds": [
+                1
+            ],
+            "dealsIds": [
+                "655f4ea2638e3c2e6009efe4",
+                "655f66b8e122b6bf37823d06"
+            ],
+            "companiesIds": [
+                "655f4e96c70088a3d04c238d"
+            ],
+            "priority": false,
+            "createdAt": "2023-11-27T09:57:39.321Z"
+        }
+    ],
+    "pager": {
+        "current": 1,
+        "limit": 50,
+        "from": 0,
+        "to": 50,
+        "count": 20,
+        "total": 20,
+        "max": 1,
+        "totalStoredResults": 20
+    }
+}

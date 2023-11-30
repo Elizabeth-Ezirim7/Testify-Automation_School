@@ -1,0 +1,9 @@
+{
+    "id": "ozh4LfhsQ5TiRwiTA",
+    "type": "agent",
+    "text": "Good evening Sir/Madam! How can I help you?",
+    "visitorId": "kZMvWhf8npAu3H6qd57w2Hv6nh6rnxvg",
+    "agentId": "655b2b95509bad4b6d08e90f_Dummy9vEF276higDNpKBpP6Q",
+    "createdAt": 1701386664198,
+    "receivedFrom": "SuperAwesomeHelpdesk"
+}

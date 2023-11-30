@@ -1,0 +1,10 @@
+{
+    "id": "6569199ec4ac5e01c61bfc95",
+    "taskTypeId": "655b2b95a913dfc90f6166b5",
+    "name": "Lunch",
+    "contactsIds": null,
+    "dealsIds": null,
+    "companiesIds": null,
+    "priority": false,
+    "createdAt": "2023-11-30T23:24:14.938Z"
+}

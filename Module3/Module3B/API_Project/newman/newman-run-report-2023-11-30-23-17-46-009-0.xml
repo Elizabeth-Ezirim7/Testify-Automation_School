@@ -1,0 +1,1683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="SendInBlueAPI" tests="170" time="59.037">
+  <testsuite name="Sales CRM / Companies / Get all Companies" id="195ec0b8-2a79-42b4-af15-afd47d123204" timestamp="2023-11-30T23:16:33.152Z" tests="1" failures="0" errors="0" time="0.560">
+    <testcase name="Status code is 500" time="0.560" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Create a company" id="49cff8d6-0013-4845-a275-1dfef38c01f0" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="3" errors="0" time="0.579">
+    <testcase name="Status code is 200" time="0.579" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 500">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Create a company.]]>
+        <![CDATA[Test description: Status code is 200.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 500.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 500
+   at Object.eval sandbox-script.js:1:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify newly generated ID" time="0.579" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.579" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.579" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.579" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected 500 to be one of [ 200, 201 ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Create a company.]]>
+        <![CDATA[Test description: Successful POST request.]]>
+        <![CDATA[Error message: expected 500 to be one of [ 200, 201 ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected 500 to be one of [ 200, 201 ]
+   at Object.eval sandbox-script.js:5:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has OK" time="0.579" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'OK' but got 'Internal Server Error'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Create a company.]]>
+        <![CDATA[Test description: Status code name has OK.]]>
+        <![CDATA[Error message: expected response to have status reason 'OK' but got 'Internal Server Error'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'OK' but got 'Internal Server Error'
+   at Object.eval sandbox-script.js:6:2).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Get company attributes" id="8a7cde9b-0e12-49e4-bedb-d0cfa23981f5" timestamp="2023-11-30T23:16:33.152Z" tests="12" failures="0" errors="0" time="0.552">
+    <testcase name="Verify Status Code" time="0.552" classname="SendInBlueApi"/>
+    <testcase name="Verify newly Internal Name" time="0.552" classname="SendInBlueApi"/>
+    <testcase name="Verify internalName 2" time="0.552" classname="SendInBlueApi"/>
+    <testcase name="Verify internalName 3" time="0.552" classname="SendInBlueApi"/>
+    <testcase name="Verify internalName 4" time="0.552" classname="SendInBlueApi"/>
+    <testcase name="Verify internalName 5" time="0.552" classname="SendInBlueApi"/>
+    <testcase name="Verify internalName 6" time="0.552" classname="SendInBlueApi"/>
+    <testcase name="Verify internalName 7" time="0.552" classname="SendInBlueApi"/>
+    <testcase name="Verify internalName 8" time="0.552" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.552" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.552" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.552" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Link and Unlink company with contact and deal" id="693cec24-293b-4d34-9f91-538cc85da1a0" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="2" errors="0" time="0.228">
+    <testcase name="Verify Status Code" time="0.228" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status code 204 but got 400">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Link and Unlink company with contact and deal.]]>
+        <![CDATA[Test description: Verify Status Code.]]>
+        <![CDATA[Error message: expected response to have status code 204 but got 400.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 204 but got 400
+   at Object.eval sandbox-script.js:1:4).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.228" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.228" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No content" time="0.228" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'No Content' but got 'Bad Request'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Link and Unlink company with contact and deal.]]>
+        <![CDATA[Test description: Status code name has No content.]]>
+        <![CDATA[Error message: expected response to have status reason 'No Content' but got 'Bad Request'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'No Content' but got 'Bad Request'
+   at Object.eval sandbox-script.js:4:4).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Get a company" id="01fa2d9f-b63c-40c3-a9b6-2450e5402975" timestamp="2023-11-30T23:16:33.152Z" tests="9" failures="5" errors="0" time="0.255">
+    <testcase name="Verify Status Code" time="0.255" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 400">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Get a company.]]>
+        <![CDATA[Test description: Verify Status Code.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 400.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 400
+   at Object.eval sandbox-script.js:1:5).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify ID" time="0.255" classname="SendInBlueApi"/>
+    <testcase name="Verify attributeTypeName " time="0.255" classname="SendInBlueApi"/>
+    <testcase name="Verify Domain " time="0.255" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="Cannot read properties of undefined (reading 'domain')">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Get a company.]]>
+        <![CDATA[Test description: Verify Domain .]]>
+        <![CDATA[Error message: Cannot read properties of undefined (reading 'domain').]]>
+        <![CDATA[Stacktrace: TypeError: Cannot read properties of undefined (reading 'domain')
+   at Object.eval sandbox-script.js:4:5).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify Industry " time="0.255" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="Cannot read properties of undefined (reading 'industry')">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Get a company.]]>
+        <![CDATA[Test description: Verify Industry .]]>
+        <![CDATA[Error message: Cannot read properties of undefined (reading 'industry').]]>
+        <![CDATA[Stacktrace: TypeError: Cannot read properties of undefined (reading 'industry')
+   at Object.eval sandbox-script.js:5:5).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify Name " time="0.255" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="Cannot read properties of undefined (reading 'name')">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Get a company.]]>
+        <![CDATA[Test description: Verify Name .]]>
+        <![CDATA[Error message: Cannot read properties of undefined (reading 'name').]]>
+        <![CDATA[Stacktrace: TypeError: Cannot read properties of undefined (reading 'name')
+   at Object.eval sandbox-script.js:6:5).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.255" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.255" classname="SendInBlueApi"/>
+    <testcase name="Status code name has Ok" time="0.255" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'OK' but got 'Bad Request'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Get a company.]]>
+        <![CDATA[Test description: Status code name has Ok.]]>
+        <![CDATA[Error message: expected response to have status reason 'OK' but got 'Bad Request'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'OK' but got 'Bad Request'
+   at Object.eval sandbox-script.js:9:5).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Delete a company" id="00feb0d9-c4a2-4d2c-b75d-1919fac697f7" timestamp="2023-11-30T23:16:33.152Z" tests="5" failures="2" errors="0" time="0.224">
+    <testcase name="Verify Status Code" time="0.224" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status code 204 but got 400">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Delete a company.]]>
+        <![CDATA[Test description: Verify Status Code.]]>
+        <![CDATA[Error message: expected response to have status code 204 but got 400.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 204 but got 400
+   at Object.eval sandbox-script.js:1:6).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.224" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.224" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'No Content' but got 'Bad Request'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Delete a company.]]>
+        <![CDATA[Test description: Status code name has No Content.]]>
+        <![CDATA[Error message: expected response to have status reason 'No Content' but got 'Bad Request'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'No Content' but got 'Bad Request'
+   at Object.eval sandbox-script.js:4:6).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 2000ms" time="0.224" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Update a company" id="d57763d5-23c0-4366-9fd4-2476cd1eee08" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="2" errors="0" time="0.254">
+    <testcase name="Verify Status Code" time="0.254" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status code 204 but got 400">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Update a company.]]>
+        <![CDATA[Test description: Verify Status Code.]]>
+        <![CDATA[Error message: expected response to have status code 204 but got 400.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 204 but got 400
+   at Object.eval sandbox-script.js:1:7).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.254" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.254" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.254" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'No Content' but got 'Bad Request'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Companies / Update a company.]]>
+        <![CDATA[Test description: Status code name has No Content.]]>
+        <![CDATA[Error message: expected response to have status reason 'No Content' but got 'Bad Request'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'No Content' but got 'Bad Request'
+   at Object.eval sandbox-script.js:4:7).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Get pipeline stages" id="729b70f8-d5cf-434a-95f4-6680a16c5ab9" timestamp="2023-11-30T23:16:33.152Z" tests="13" failures="0" errors="0" time="0.279">
+    <testcase name="Verify status code" time="0.279" classname="SendInBlueApi"/>
+    <testcase name="Verify Pipeline Value" time="0.279" classname="SendInBlueApi"/>
+    <testcase name="Verify Pipeline name" time="0.279" classname="SendInBlueApi"/>
+    <testcase name="Verify Stage 1" time="0.279" classname="SendInBlueApi"/>
+    <testcase name="Verify Stage 2" time="0.279" classname="SendInBlueApi"/>
+    <testcase name="Verify Stage 3" time="0.279" classname="SendInBlueApi"/>
+    <testcase name="Verify Stage 4" time="0.279" classname="SendInBlueApi"/>
+    <testcase name="Verify Stage 5" time="0.279" classname="SendInBlueApi"/>
+    <testcase name="Verify Stage 6" time="0.279" classname="SendInBlueApi"/>
+    <testcase name="Verify Stage 7" time="0.279" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.279" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.279" classname="SendInBlueApi"/>
+    <testcase name="Status code name has string" time="0.279" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Get all deals" id="67f2b542-6e9b-43cd-bb33-09d57fb94a57" timestamp="2023-11-30T23:16:33.152Z" tests="12" failures="6" errors="0" time="0.331">
+    <testcase name="Verify Status Code" time="0.331" classname="SendInBlueApi"/>
+    <testcase name="Verify Items " time="0.331" classname="SendInBlueApi"/>
+    <testcase name="Verify Pipeline name" time="0.331" classname="SendInBlueApi"/>
+    <testcase name="Verify Items 1 " time="0.331" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected { Object (id, attributes, ...) } to equal [ { …(6) }, { …(6) }, { …(6) }, …(7) ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Get all deals.]]>
+        <![CDATA[Test description: Verify Items 1 .]]>
+        <![CDATA[Error message: expected { Object (id, attributes, ...) } to equal [ { …(6) }, { …(6) }, { …(6) }, …(7) ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected { Object (id, attributes, ...) } to equal [ { …(6) }, { …(6) }, { …(6) }, …(7) ]
+   at Object.eval sandbox-script.js:4:9).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify Items 2 " time="0.331" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected { Object (id, attributes, ...) } to equal [ { …(6) }, { …(6) }, { …(6) }, …(7) ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Get all deals.]]>
+        <![CDATA[Test description: Verify Items 2 .]]>
+        <![CDATA[Error message: expected { Object (id, attributes, ...) } to equal [ { …(6) }, { …(6) }, { …(6) }, …(7) ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected { Object (id, attributes, ...) } to equal [ { …(6) }, { …(6) }, { …(6) }, …(7) ]
+   at Object.eval sandbox-script.js:5:9).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify Items 3" time="0.331" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected { Object (id, attributes, ...) } to equal [ { …(6) }, { …(6) }, { …(6) }, …(7) ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Get all deals.]]>
+        <![CDATA[Test description: Verify Items 3.]]>
+        <![CDATA[Error message: expected { Object (id, attributes, ...) } to equal [ { …(6) }, { …(6) }, { …(6) }, …(7) ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected { Object (id, attributes, ...) } to equal [ { …(6) }, { …(6) }, { …(6) }, …(7) ]
+   at Object.eval sandbox-script.js:6:9).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify Items 4" time="0.331" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected { Object (id, attributes, ...) } to equal [ { …(6) }, { …(6) }, { …(6) }, …(7) ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Get all deals.]]>
+        <![CDATA[Test description: Verify Items 4.]]>
+        <![CDATA[Error message: expected { Object (id, attributes, ...) } to equal [ { …(6) }, { …(6) }, { …(6) }, …(7) ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected { Object (id, attributes, ...) } to equal [ { …(6) }, { …(6) }, { …(6) }, …(7) ]
+   at Object.eval sandbox-script.js:7:9).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify Items  5" time="0.331" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected { Object (id, attributes, ...) } to equal [ { …(6) }, { …(6) }, { …(6) }, …(7) ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Get all deals.]]>
+        <![CDATA[Test description: Verify Items  5.]]>
+        <![CDATA[Error message: expected { Object (id, attributes, ...) } to equal [ { …(6) }, { …(6) }, { …(6) }, …(7) ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected { Object (id, attributes, ...) } to equal [ { …(6) }, { …(6) }, { …(6) }, …(7) ]
+   at Object.eval sandbox-script.js:8:9).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify Count " time="0.331" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected 10 to equal 8">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Get all deals.]]>
+        <![CDATA[Test description: Verify Count .]]>
+        <![CDATA[Error message: expected 10 to equal 8.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 10 to equal 8
+   at Object.eval sandbox-script.js:9:9).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.331" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.331" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.331" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Create a deal" id="a732022b-6fc8-4b1d-a293-320c05f9a65b" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="0" errors="0" time="0.396">
+    <testcase name="Verify Status Code" time="0.396" classname="SendInBlueApi"/>
+    <testcase name="Verify newly generated ID" time="0.396" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.396" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.396" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.396" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Link and Unlink a deal with contacts and companies" id="7b8a4e39-6a6a-4225-87fb-616b09b30bca" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="2" errors="0" time="0.211">
+    <testcase name="Verify Status Code" time="0.211" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status code 204 but got 400">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Link and Unlink a deal with contacts and companies.]]>
+        <![CDATA[Test description: Verify Status Code.]]>
+        <![CDATA[Error message: expected response to have status code 204 but got 400.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 204 but got 400
+   at Object.eval sandbox-script.js:1:11).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.211" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.211" classname="SendInBlueApi"/>
+    <testcase name="Status code name has string" time="0.211" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'No content' but got 'Bad Request'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Link and Unlink a deal with contacts and companies.]]>
+        <![CDATA[Test description: Status code name has string.]]>
+        <![CDATA[Error message: expected response to have status reason 'No content' but got 'Bad Request'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'No content' but got 'Bad Request'
+   at Object.eval sandbox-script.js:4:11).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Get deal attributes" id="7a04078d-db86-4e5f-a020-1452fbb08d9a" timestamp="2023-11-30T23:16:33.152Z" tests="10" failures="0" errors="0" time="0.882">
+    <testcase name="Verify Status code is 200" time="0.882" classname="SendInBlueApi"/>
+    <testcase name="Verify newly Internal Name" time="0.882" classname="SendInBlueApi"/>
+    <testcase name="Verify attributeTypeName 1 " time="0.882" classname="SendInBlueApi"/>
+    <testcase name="Verify attributeTypeName 2 " time="0.882" classname="SendInBlueApi"/>
+    <testcase name="Verify attributeTypeName 3 " time="0.882" classname="SendInBlueApi"/>
+    <testcase name="Verify attributeTypeName 4" time="0.882" classname="SendInBlueApi"/>
+    <testcase name="Verify attributeTypeName 5" time="0.882" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.882" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.882" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.882" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Get a deal" id="1d0dac38-b625-4103-a451-907b7cdb5ee7" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="1" time="0.278">
+    <system-err><![CDATA[Iteration: 0
+
+---
+testScriptError: Cannot read properties of undefined (reading '0')
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Delete a deal" id="2c6e59c3-4499-42b4-9ebf-109e041749d0" timestamp="2023-11-30T23:16:33.152Z" tests="5" failures="0" errors="0" time="0.270">
+    <testcase name="Verify Status Code" time="0.270" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 4000ms" time="0.270" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.270" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.270" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.270" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Update a deal" id="5e9f6e2e-af96-4f0e-a33d-9b13e22ca274" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="1" errors="0" time="0.342">
+    <testcase name="Verify Status Code" time="0.342" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.342" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 200ms" time="0.342" classname="SendInBlueApi"/>
+    <testcase name="Status code name has string" time="0.342" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'No Content' but got 'Not Found'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Deals / Update a deal.]]>
+        <![CDATA[Test description: Status code name has string.]]>
+        <![CDATA[Error message: expected response to have status reason 'No Content' but got 'Not Found'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'No Content' but got 'Not Found'
+   at Object.eval sandbox-script.js:4:15).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Get all tasks" id="ad8d1059-c118-4784-be42-3281e179765e" timestamp="2023-11-30T23:16:33.152Z" tests="12" failures="6" errors="0" time="1.005">
+    <testcase name="Verify Status Code" time="1.005" classname="SendInBlueApi"/>
+    <testcase name="Verify Items " time="1.005" classname="SendInBlueApi"/>
+    <testcase name="Verify  Limit" time="1.005" classname="SendInBlueApi"/>
+    <testcase name="Verify 1st Items " time="1.005" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected { Object (id, taskTypeId, ...) } to equal [ { …(8) }, { …(8) }, { …(8) }, …(17) ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Tasks / Get all tasks.]]>
+        <![CDATA[Test description: Verify 1st Items .]]>
+        <![CDATA[Error message: expected { Object (id, taskTypeId, ...) } to equal [ { …(8) }, { …(8) }, { …(8) }, …(17) ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected { Object (id, taskTypeId, ...) } to equal [ { …(8) }, { …(8) }, { …(8) }, …(17) ]
+   at Object.eval sandbox-script.js:4:16).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify 2nd Items " time="1.005" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected '655fdb55c70088a3d04c271f' to equal [ { …(8) }, { …(8) }, { …(8) }, …(17) ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Tasks / Get all tasks.]]>
+        <![CDATA[Test description: Verify 2nd Items .]]>
+        <![CDATA[Error message: expected '655fdb55c70088a3d04c271f' to equal [ { …(8) }, { …(8) }, { …(8) }, …(17) ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected '655fdb55c70088a3d04c271f' to equal [ { …(8) }, { …(8) }, { …(8) }, …(17) ]
+   at Object.eval sandbox-script.js:5:16).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify 3rd Items " time="1.005" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected '655fdb92a84c990fc3708de4' to equal [ { …(8) }, { …(8) }, { …(8) }, …(17) ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Tasks / Get all tasks.]]>
+        <![CDATA[Test description: Verify 3rd Items .]]>
+        <![CDATA[Error message: expected '655fdb92a84c990fc3708de4' to equal [ { …(8) }, { …(8) }, { …(8) }, …(17) ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected '655fdb92a84c990fc3708de4' to equal [ { …(8) }, { …(8) }, { …(8) }, …(17) ]
+   at Object.eval sandbox-script.js:6:16).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify 4th Items " time="1.005" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected '65645d434c0efd3f4d78dbd7' to equal [ { …(8) }, { …(8) }, { …(8) }, …(17) ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Tasks / Get all tasks.]]>
+        <![CDATA[Test description: Verify 4th Items .]]>
+        <![CDATA[Error message: expected '65645d434c0efd3f4d78dbd7' to equal [ { …(8) }, { …(8) }, { …(8) }, …(17) ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected '65645d434c0efd3f4d78dbd7' to equal [ { …(8) }, { …(8) }, { …(8) }, …(17) ]
+   at Object.eval sandbox-script.js:7:16).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify 5th Items " time="1.005" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected '65645dea1588da07706f62b4' to equal [ { …(8) }, { …(8) }, { …(8) }, …(17) ]">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Tasks / Get all tasks.]]>
+        <![CDATA[Test description: Verify 5th Items .]]>
+        <![CDATA[Error message: expected '65645dea1588da07706f62b4' to equal [ { …(8) }, { …(8) }, { …(8) }, …(17) ].]]>
+        <![CDATA[Stacktrace: AssertionError: expected '65645dea1588da07706f62b4' to equal [ { …(8) }, { …(8) }, { …(8) }, …(17) ]
+   at Object.eval sandbox-script.js:8:16).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="1.005" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 200ms" time="1.005" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected 1005 to be below 200">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Tasks / Get all tasks.]]>
+        <![CDATA[Test description: Response time is less than 200ms.]]>
+        <![CDATA[Error message: expected 1005 to be below 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 1005 to be below 200
+   at Object.eval sandbox-script.js:11:16).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has OK" time="1.005" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Create a task" id="e8f9756d-ef30-472c-abae-7cf8aae5f17b" timestamp="2023-11-30T23:16:33.152Z" tests="7" failures="1" errors="0" time="1.097">
+    <testcase name="Verify status code" time="1.097" classname="SendInBlueApi"/>
+    <testcase name="Verify ID" time="1.097" classname="SendInBlueApi"/>
+    <testcase name="Verify Priority" time="1.097" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="1.097" classname="SendInBlueApi"/>
+    <testcase name="Status code name has Created" time="1.097" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="1.097" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected 1097 to be below 1000">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Tasks / Create a task.]]>
+        <![CDATA[Test description: Response time is less than 1000ms.]]>
+        <![CDATA[Error message: expected 1097 to be below 1000.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 1097 to be below 1000
+   at Object.eval sandbox-script.js:6:17).]]>
+      </failure>
+    </testcase>
+    <testcase name="Successful POST request" time="1.097" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Get all task types" id="d1debc17-d71b-4868-a6d9-f9d887332fe7" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="0" errors="0" time="0.808">
+    <testcase name="Verify status code" time="0.808" classname="SendInBlueApi"/>
+    <testcase name="Verify that one of the titles has the name, Meeting" time="0.808" classname="SendInBlueApi"/>
+    <testcase name="Verify the ID of the 4th object array " time="0.808" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.808" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.808" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.808" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Get a task" id="d8faf79a-207b-4aea-9e56-d8dc52fde579" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="0" errors="0" time="0.810">
+    <testcase name="Verify status code" time="0.810" classname="SendInBlueApi"/>
+    <testcase name="Verify ID from the response body" time="0.810" classname="SendInBlueApi"/>
+    <testcase name="Verify TaskTypeID from the response body" time="0.810" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.810" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.810" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.810" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Delete a task" id="f80ff219-c88e-460e-91c4-cba7d45c3e93" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="1" errors="0" time="0.927">
+    <testcase name="Verify status code" time="0.927" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.927" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.927" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have header with key 'Content-Type'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Tasks / Delete a task.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected response to have header with key 'Content-Type'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have header with key 'Content-Type'
+   at Object.eval sandbox-script.js:3:20).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.927" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Update a task" id="5b9b075f-affb-4d92-a8fa-b73fddf78a28" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="2" errors="0" time="0.739">
+    <testcase name="Verify status code" time="0.739" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status code 204 but got 404">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Tasks / Update a task.]]>
+        <![CDATA[Test description: Verify status code.]]>
+        <![CDATA[Error message: expected response to have status code 204 but got 404.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 204 but got 404
+   at Object.eval sandbox-script.js:1:21).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has No Content" time="0.739" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'No Content' but got 'Not Found'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Tasks / Update a task.]]>
+        <![CDATA[Test description: Status code name has No Content.]]>
+        <![CDATA[Error message: expected response to have status reason 'No Content' but got 'Not Found'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'No Content' but got 'Not Found'
+   at Object.eval sandbox-script.js:2:21).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.739" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.739" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Get all notes" id="5ed62fb7-2014-4b06-a3c5-cb4120d0a9c7" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="0" errors="0" time="0.324">
+    <testcase name="Verify Status Code" time="0.324" classname="SendInBlueApi"/>
+    <testcase name="Verify file ID" time="0.324" classname="SendInBlueApi"/>
+    <testcase name="Verify Company ID" time="0.324" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.324" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.324" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.324" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Create a note" id="5e3fab25-594a-4a38-8d11-e7be08b6d8c5" timestamp="2023-11-30T23:16:33.152Z" tests="9" failures="0" errors="0" time="0.262">
+    <testcase name="Verify status code" time="0.262" classname="SendInBlueApi"/>
+    <testcase name="Verify ID" time="0.262" classname="SendInBlueApi"/>
+    <testcase name="Verify Author ID" time="0.262" classname="SendInBlueApi"/>
+    <testcase name="Verify Family Name" time="0.262" classname="SendInBlueApi"/>
+    <testcase name="Verify Given Name" time="0.262" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.262" classname="SendInBlueApi"/>
+    <testcase name="Status code name has Created" time="0.262" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.262" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.262" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Get a note" id="fe574246-0bf0-4add-8ae9-243cfa0098fe" timestamp="2023-11-30T23:16:33.152Z" tests="8" failures="0" errors="0" time="0.297">
+    <testcase name="Verify status code" time="0.297" classname="SendInBlueApi"/>
+    <testcase name="Verify ID" time="0.297" classname="SendInBlueApi"/>
+    <testcase name="Verify Author ID" time="0.297" classname="SendInBlueApi"/>
+    <testcase name="Verify Full Name" time="0.297" classname="SendInBlueApi"/>
+    <testcase name="Verify Tiome Zone" time="0.297" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.297" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.297" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.297" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Update a note" id="31a06c2a-4989-44e3-a7d2-417d85413c6a" timestamp="2023-11-30T23:16:33.152Z" tests="7" failures="0" errors="0" time="0.280">
+    <testcase name="Verify status code" time="0.280" classname="SendInBlueApi"/>
+    <testcase name="Verify ID" time="0.280" classname="SendInBlueApi"/>
+    <testcase name="Verify Author ID" time="0.280" classname="SendInBlueApi"/>
+    <testcase name="Verify Text " time="0.280" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.280" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.280" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.280" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Delete a note" id="8e6aa7e0-c288-4cf0-9562-2742be7c286d" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="0" errors="0" time="0.266">
+    <testcase name="Verify status code" time="0.266" classname="SendInBlueApi"/>
+    <testcase name="Status code name has string" time="0.266" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.266" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.266" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Get all files" id="6b3d1bc6-f72b-49c3-ad71-8f7ce5d2abc8" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="0" errors="0" time="0.260">
+    <testcase name="Verify Status Code" time="0.260" classname="SendInBlueApi"/>
+    <testcase name="Verify file ID" time="0.260" classname="SendInBlueApi"/>
+    <testcase name="Verify Company ID" time="0.260" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.260" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.260" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.260" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Upload a file" id="c3eef162-dcf2-447a-bf76-33ac0d8ca112" timestamp="2023-11-30T23:16:33.152Z" tests="9" failures="0" errors="0" time="0.836">
+    <testcase name="Verify Status Code" time="0.836" classname="SendInBlueApi"/>
+    <testcase name="Verify File ID" time="0.836" classname="SendInBlueApi"/>
+    <testcase name="Verify File Name" time="0.836" classname="SendInBlueApi"/>
+    <testcase name="Verify Author ID" time="0.836" classname="SendInBlueApi"/>
+    <testcase name="Verify Company ID" time="0.836" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.836" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.836" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.836" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.836" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Download a file" id="50d03d13-a47d-4fc7-90fc-5b3244659709" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="1" errors="0" time="0.810">
+    <testcase name="Verify Status Code" time="0.810" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.810" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected 'Content-Type' response header to be 'application/json' but got 'application/octet-stream'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Sales CRM / Files / Download a file.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected 'Content-Type' response header to be 'application/json' but got 'application/octet-stream'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'Content-Type' response header to be 'application/json' but got 'application/octet-stream'
+   at Object.eval sandbox-script.js:2:29).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has OK" time="0.810" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.810" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Get file details" id="31593ea2-8893-4f1f-b294-c0106890f9cc" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="0" errors="0" time="0.268">
+    <testcase name="Verify Status Code" time="0.268" classname="SendInBlueApi"/>
+    <testcase name="Verify fullname" time="0.268" classname="SendInBlueApi"/>
+    <testcase name="Verify Time zone" time="0.268" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.268" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.268" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.268" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Delete a file" id="5ce488ee-03e3-48a2-8f1f-d24d75f05fc4" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="0" errors="0" time="0.388">
+    <testcase name="Verify Status Code" time="0.388" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.388" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.388" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.388" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Send a message as an agent" id="9fb4e120-411b-48b0-b6bd-de7a65cd6a9f" timestamp="2023-11-30T23:16:33.152Z" tests="10" failures="1" errors="0" time="0.468">
+    <testcase name="Verify Status Code" time="0.468" classname="SendInBlueApi"/>
+    <testcase name="Verify newly generated message ID" time="0.468" classname="SendInBlueApi"/>
+    <testcase name="Verify that Content-Type is present" time="0.468" classname="SendInBlueApi"/>
+    <testcase name="Verify User type" time="0.468" classname="SendInBlueApi"/>
+    <testcase name="Verify visitor ID" time="0.468" classname="SendInBlueApi"/>
+    <testcase name="Verify agent Id" time="0.468" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.468" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Conversations / Messages / Send a message as an agent.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'
+   at Object.eval sandbox-script.js:7:32).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has OK" time="0.468" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 100ms" time="0.468" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.468" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Get a message" id="5d80fdb3-f946-4e73-95c6-5dc3b5f33856" timestamp="2023-11-30T23:16:33.152Z" tests="8" failures="1" errors="0" time="0.301">
+    <testcase name="Verify status code" time="0.301" classname="SendInBlueApi"/>
+    <testcase name="Verify newly generated message ID" time="0.301" classname="SendInBlueApi"/>
+    <testcase name="Verify User type" time="0.301" classname="SendInBlueApi"/>
+    <testcase name="Verify visitor ID" time="0.301" classname="SendInBlueApi"/>
+    <testcase name="Verify agent Id" time="0.301" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.301" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Conversations / Messages / Get a message.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'
+   at Object.eval sandbox-script.js:6:33).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has OK" time="0.301" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 100ms" time="0.301" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Update a message sent by an agent" id="de28ddce-f1d1-4c38-b6e0-0bfe36c38e7b" timestamp="2023-11-30T23:16:33.152Z" tests="8" failures="0" errors="0" time="0.606">
+    <testcase name="Verify status code" time="0.606" classname="SendInBlueApi"/>
+    <testcase name="Verify newly generated message ID" time="0.606" classname="SendInBlueApi"/>
+    <testcase name="Verify User type" time="0.606" classname="SendInBlueApi"/>
+    <testcase name="Verify visitor ID" time="0.606" classname="SendInBlueApi"/>
+    <testcase name="Verify agent Id" time="0.606" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.606" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.606" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 100ms" time="0.606" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Delete a message sent by an agent" id="06d8b193-31ae-489f-857e-39fd487701e8" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="2" errors="0" time="0.415">
+    <testcase name="Verify status" time="0.415" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.415" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.415" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have header with key 'Content-Type'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Conversations / Messages / Delete a message sent by an agent.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected response to have header with key 'Content-Type'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have header with key 'Content-Type'
+   at Object.eval sandbox-script.js:3:35).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has OK" time="0.415" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'OK' but got 'No Content'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Conversations / Messages / Delete a message sent by an agent.]]>
+        <![CDATA[Test description: Status code name has OK.]]>
+        <![CDATA[Error message: expected response to have status reason 'OK' but got 'No Content'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'OK' but got 'No Content'
+   at Object.eval sandbox-script.js:4:35).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Conversations / Status / Sets agent’s status to online for 2-3 minutes" id="f3040970-591e-403e-9d91-6c4e662ca8b6" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="0" errors="0" time="0.263">
+    <testcase name="Verify Status Code" time="0.263" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.263" classname="SendInBlueApi"/>
+    <testcase name="Status code name has Created" time="0.263" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.263" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Send an automated message to a visitor" id="8dc1c934-ea09-4c24-824b-4cb6fdde2cce" timestamp="2023-11-30T23:16:33.152Z" tests="10" failures="1" errors="0" time="0.281">
+    <testcase name="Verify Status Code" time="0.281" classname="SendInBlueApi"/>
+    <testcase name="Verify newly generated message ID" time="0.281" classname="SendInBlueApi"/>
+    <testcase name="Verify that Content-Type is present" time="0.281" classname="SendInBlueApi"/>
+    <testcase name="Verify User type" time="0.281" classname="SendInBlueApi"/>
+    <testcase name="Verify visitor ID" time="0.281" classname="SendInBlueApi"/>
+    <testcase name="Verify agent Id" time="0.281" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.281" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Send an automated message to a visitor.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'
+   at Object.eval sandbox-script.js:7:37).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has OK" time="0.281" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.281" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.281" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Get an automated message" id="2598eaee-4b2e-404b-bbc6-b25da52089a4" timestamp="2023-11-30T23:16:33.152Z" tests="9" failures="0" errors="0" time="0.285">
+    <testcase name="Verify Status Code" time="0.285" classname="SendInBlueApi"/>
+    <testcase name="Verify newly generated message ID" time="0.285" classname="SendInBlueApi"/>
+    <testcase name="Verify that Content-Type is present" time="0.285" classname="SendInBlueApi"/>
+    <testcase name="Verify User type" time="0.285" classname="SendInBlueApi"/>
+    <testcase name="Verify visitor ID" time="0.285" classname="SendInBlueApi"/>
+    <testcase name="Verify agent Id" time="0.285" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.285" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.285" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.285" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Update an automated message" id="0815a778-a510-47f2-befe-2d5c98a223e2" timestamp="2023-11-30T23:16:33.152Z" tests="8" failures="1" errors="0" time="0.475">
+    <testcase name="Verify Status Code" time="0.475" classname="SendInBlueApi"/>
+    <testcase name="Verify newly generated message ID" time="0.475" classname="SendInBlueApi"/>
+    <testcase name="Verify User type" time="0.475" classname="SendInBlueApi"/>
+    <testcase name="Verify visitor ID" time="0.475" classname="SendInBlueApi"/>
+    <testcase name="Verify agent Id" time="0.475" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.475" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Update an automated message.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'
+   at Object.eval sandbox-script.js:6:39).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has OK" time="0.475" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.475" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Delete an automated message" id="33fd1aec-ae4c-4740-8efc-cad435b4f3cc" timestamp="2023-11-30T23:16:33.152Z" tests="5" failures="2" errors="0" time="0.603">
+    <testcase name="Verify status" time="0.603" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.603" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have header with key 'Content-Type'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Delete an automated message.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected response to have header with key 'Content-Type'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have header with key 'Content-Type'
+   at Object.eval sandbox-script.js:2:40).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has OK" time="0.603" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'OK' but got 'No Content'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Conversations / Pushed messages / Delete an automated message.]]>
+        <![CDATA[Test description: Status code name has OK.]]>
+        <![CDATA[Error message: expected response to have status reason 'OK' but got 'No Content'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'OK' but got 'No Content'
+   at Object.eval sandbox-script.js:3:40).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.603" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.603" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="eCommerce / Orders / Create/update an order" id="c08773e5-5951-4fb1-89ca-f0fa620c32e4" timestamp="2023-11-30T23:16:33.152Z" tests="1" failures="0" errors="0" time="0.197">
+    <testcase name="Status code is 403" time="0.197" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="eCommerce / Orders / Create orders in batch" id="fc05f770-5071-49ec-97e0-ac555ba65149" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.184"/>
+  <testsuite name="eCommerce / Categories / Get all categories" id="a8a0cd22-c6ad-49aa-a161-9f0438ab94c8" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.194"/>
+  <testsuite name="eCommerce / Categories / Create/update a category" id="8b860f0b-a21a-4d85-991a-f5256897acf1" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.172"/>
+  <testsuite name="eCommerce / Categories / Create categories in batch" id="3826b739-1c19-4d1f-9c02-40e5ffef7c9c" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.194"/>
+  <testsuite name="eCommerce / Categories / Get a category details" id="2c05e704-26a6-47ac-a0e9-9673b3422bc9" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.221"/>
+  <testsuite name="eCommerce / Products / Get all products" id="3cd3c0f4-ce25-4728-a827-213bdb3aea60" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.173"/>
+  <testsuite name="eCommerce / Products / Get a product's details" id="c743150d-14d3-403d-a5b6-d42bf17ebe00" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.186"/>
+  <testsuite name="eCommerce / Products / Create/update a product" id="4554d0be-fa9f-40e1-9d1a-ab01ad4dd576" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.176"/>
+  <testsuite name="eCommerce / Products / Create products in batch" id="b332727f-4fb7-4cdb-9c30-9a6d4ce36799" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.210"/>
+  <testsuite name="eCommerce / Activate eCommerce platform on your account" id="d2b69286-001f-428a-8aa2-e3d885b81d53" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.165"/>
+  <testsuite name="Transactional / Email API / Send a transactional email" id="c9634fd4-362e-42e2-af04-48990d967489" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="0" errors="0" time="0.178">
+    <testcase name="Verify Status Code" time="0.178" classname="SendInBlueApi"/>
+    <testcase name="Verify newly generated ID" time="0.178" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.178" classname="SendInBlueApi"/>
+    <testcase name="Status code name has Created" time="0.178" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.178" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.178" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Get the list of transactional emails on the basis of allowed filters" id="37d7d1d2-6e90-4199-8287-a2ab49e68122" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.198"/>
+  <testsuite name="Transactional / Email API / Delete scheduled emails by batchId or messageId" id="a2e9cade-23a0-4404-8e09-eca0ff38c828" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.309"/>
+  <testsuite name="Transactional / Email API / Get the personalized content of a sent transactional email" id="d60e8ffe-95da-4c4a-976b-ad6ce7496da8" timestamp="2023-11-30T23:16:33.152Z" tests="10" failures="0" errors="0" time="0.554">
+    <testcase name="Verify Status Code" time="0.554" classname="SendInBlueApi"/>
+    <testcase name="Verify Email Address" time="0.554" classname="SendInBlueApi"/>
+    <testcase name="Verify Subject" time="0.554" classname="SendInBlueApi"/>
+    <testcase name="Verify Date" time="0.554" classname="SendInBlueApi"/>
+    <testcase name="Verify First event" time="0.554" classname="SendInBlueApi"/>
+    <testcase name="Verify Second event" time="0.554" classname="SendInBlueApi"/>
+    <testcase name="Verify Template ID" time="0.554" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.554" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.554" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.554" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Fetch scheduled emails by batchId or messageId" id="291612fd-5489-48ae-a452-bf1b8d75d760" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.368"/>
+  <testsuite name="Transactional / Templates / Get the list of email templates" id="e5173cfc-d3d2-48bf-baae-37710becda65" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="0" errors="0" time="0.203">
+    <testcase name="Verify Status Code" time="0.203" classname="SendInBlueApi"/>
+    <testcase name="Verify Count" time="0.203" classname="SendInBlueApi"/>
+    <testcase name="Verify template" time="0.203" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.203" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.203" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 3000ms" time="0.203" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Create an email template" id="9e5dae23-9b30-43cf-9e66-8b08af60799d" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.179"/>
+  <testsuite name="Transactional / Templates / Returns the template information" id="6ee87d65-e5f2-4ab8-83fe-8789128a1ce7" timestamp="2023-11-30T23:16:33.152Z" tests="10" failures="0" errors="0" time="0.207">
+    <testcase name="Verify Status Code" time="0.207" classname="SendInBlueApi"/>
+    <testcase name="Verify Template ID" time="0.207" classname="SendInBlueApi"/>
+    <testcase name="Verify Template Name" time="0.207" classname="SendInBlueApi"/>
+    <testcase name="Verify Template Subject" time="0.207" classname="SendInBlueApi"/>
+    <testcase name="Verify Sender's Name" time="0.207" classname="SendInBlueApi"/>
+    <testcase name="Verify Sender's Email" time="0.207" classname="SendInBlueApi"/>
+    <testcase name="Verify Sender's ID" time="0.207" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.207" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.207" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.207" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Update an email template" id="99e3ed84-bdab-4cd3-9f29-a16c48579199" timestamp="2023-11-30T23:16:33.152Z" tests="3" failures="0" errors="0" time="0.405">
+    <testcase name="Verify Status Code" time="0.405" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.405" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 3000ms" time="0.405" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Delete an inactive email template" id="ba0a6f87-09c2-49a3-9162-8e044cea69c8" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.193"/>
+  <testsuite name="Transactional / Templates / Send a template to your test list" id="371d8c41-b3c0-4669-92c5-bb83bfb38346" timestamp="2023-11-30T23:16:33.152Z" tests="5" failures="0" errors="0" time="0.220">
+    <testcase name="Verify Status Code" time="0.220" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.220" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.220" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.220" classname="SendInBlueApi"/>
+    <testcase name="Verify cookies parameter" time="0.220" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / Statistics / Get your transactional email activity aggregated over a period of time" id="e0c9bd97-3a96-4166-807b-238115f859e0" timestamp="2023-11-30T23:16:33.152Z" tests="5" failures="0" errors="0" time="0.233">
+    <testcase name="Verify Status Code" time="0.233" classname="SendInBlueApi"/>
+    <testcase name="Verify Date range" time="0.233" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.233" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.233" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.233" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / Statistics / Get your transactional email activity aggregated per day" id="fce85bfe-a021-4a25-8e9e-6829bc32370b" timestamp="2023-11-30T23:16:33.152Z" tests="7" failures="0" errors="0" time="0.287">
+    <testcase name="Verify Status Code" time="0.287" classname="SendInBlueApi"/>
+    <testcase name="Verify Date range" time="0.287" classname="SendInBlueApi"/>
+    <testcase name="Verify repots" time="0.287" classname="SendInBlueApi"/>
+    <testcase name="Verify report date" time="0.287" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.287" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.287" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.287" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / Statistics / Get all your transactional email activity (unaggregated events)" id="9d318036-0db3-4452-952e-e7e47ec36d84" timestamp="2023-11-30T23:16:33.152Z" tests="7" failures="0" errors="0" time="0.419">
+    <testcase name="Verify Status Code" time="0.419" classname="SendInBlueApi"/>
+    <testcase name="Verify first events" time="0.419" classname="SendInBlueApi"/>
+    <testcase name="Verify MEssage ID" time="0.419" classname="SendInBlueApi"/>
+    <testcase name="Verify Message ID" time="0.419" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.419" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.419" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.419" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Contacts / Get the list of blocked or unsubscribed transactional contacts" id="2558c2f4-327a-4b4a-9ad0-e25190a472dd" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="0" errors="0" time="0.429">
+    <testcase name="Verify Status Code" time="0.429" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.429" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.429" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.429" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Contacts / Unblock or resubscribe a transactional contact" id="9301b1fd-9d35-47fb-8509-e5c0b60ce0bc" timestamp="2023-11-30T23:16:33.152Z" tests="3" failures="0" errors="0" time="0.603">
+    <testcase name="Verify Status Code" time="0.603" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.603" classname="SendInBlueApi"/>
+    <testcase name="Status code name has Not Found" time="0.603" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Domains / Get the list of blocked domains" id="96c3e54f-8b22-48c8-8268-0861bc0ae384" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="0" errors="0" time="0.216">
+    <testcase name="Verify Status Code" time="0.216" classname="SendInBlueApi"/>
+    <testcase name="Verify Events" time="0.216" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.216" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.216" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Domains / Add a new domain to the list of blocked domains" id="87eff490-f402-46bc-9c6d-26e9efec4b30" timestamp="2023-11-30T23:16:33.152Z" tests="5" failures="0" errors="0" time="0.293">
+    <testcase name="Verify Status Code" time="0.293" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.293" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 3000ms" time="0.293" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.293" classname="SendInBlueApi"/>
+    <testcase name="Status code name has Created" time="0.293" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Domains / Unblock an existing domain from the list of blocked domains" id="2a69fdd4-da59-4e87-9574-2ced06f2b702" timestamp="2023-11-30T23:16:33.152Z" tests="3" failures="0" errors="0" time="0.200">
+    <testcase name="Verify Status Code" time="0.200" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.200" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No content" time="0.200" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / Logs / Delete hardbounces" id="4f4e2862-e9f7-4405-b585-4393450610f5" timestamp="2023-11-30T23:16:33.152Z" tests="5" failures="0" errors="0" time="0.209">
+    <testcase name="Verify Status Code" time="0.209" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.209" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 3000ms" time="0.209" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.209" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.209" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / Logs / Delete an SMTP transactional log" id="5a4c40f6-c738-44cd-8249-cc82c2ca7818" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.286"/>
+  <testsuite name="Transactional / Inbound Email Parsing / Get the list of all the events for the received emails." id="ccfd4f5b-aa49-4e1c-929e-0c0aed52e4b0" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="0" errors="0" time="0.332">
+    <testcase name="Verify Status Code" time="0.332" classname="SendInBlueApi"/>
+    <testcase name="Verify Events" time="0.332" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.332" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.332" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / Inbound Email Parsing / Fetch all events history for one particular received email." id="dbb3a860-9482-490b-9a07-38bb10791895" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.212"/>
+  <testsuite name="Transactional / Inbound Email Parsing / Retrieve inbound attachment with download token." id="af3d16da-d1bf-4c71-b564-688a65256319" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.274"/>
+  <testsuite name="Transactional / Transactional SMS / Send SMS message to a mobile number" id="74deb0f9-50de-4118-a4d8-dbeabb894452" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.197"/>
+  <testsuite name="Transactional / SMS statistics / Get your SMS activity aggregated over a period of time" id="901feeae-08b0-48b7-a9f8-1c8c75146325" timestamp="2023-11-30T23:16:33.152Z" tests="5" failures="0" errors="0" time="0.216">
+    <testcase name="Verify Status Code" time="0.216" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.216" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.216" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.216" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / SMS statistics / Get your SMS activity aggregated per day" id="4ed02edf-4e89-4a91-b4f1-c12fed9adf81" timestamp="2023-11-30T23:16:33.152Z" tests="5" failures="0" errors="0" time="0.213">
+    <testcase name="Verify Status Code" time="0.213" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.213" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.213" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.213" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / SMS statistics / Get all your SMS activity (unaggregated events)" id="13bf9522-dda7-4ed2-b8ed-459777fe923b" timestamp="2023-11-30T23:16:33.152Z" tests="5" failures="0" errors="0" time="0.211">
+    <testcase name="Verify Status Code" time="0.211" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.211" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.211" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.211" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Transactional / WhatsApp Transactional / Send a WhatsApp message" id="c2466abf-820f-464d-adc9-fd0b1d068a0d" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.226"/>
+  <testsuite name="Transactional / WhatsApp Transactional / Get all your WhatsApp activity (unaggregated events) Copy" id="fa5606e3-be1d-4d53-a330-6072c9727e89" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.203"/>
+  <testsuite name="Marketing / Email Campaigns / Get an email campaign report" id="686e204d-99b0-4eb8-88b1-060d371aa24c" timestamp="2023-11-30T23:16:33.152Z" tests="8" failures="0" errors="0" time="0.293">
+    <testcase name="Verify Status Code" time="0.293" classname="SendInBlueApi"/>
+    <testcase name="Verify Campaign Name" time="0.293" classname="SendInBlueApi"/>
+    <testcase name="Verify Campaign ID" time="0.293" classname="SendInBlueApi"/>
+    <testcase name="Verify Sender Name" time="0.293" classname="SendInBlueApi"/>
+    <testcase name="Verify Sender Email" time="0.293" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.293" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.293" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.293" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Update an email campaign" id="d0013a8a-f5e8-49ee-bf19-7542f10962c8" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="1" errors="0" time="0.608">
+    <testcase name="Verify Status Code" time="0.608" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.608" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.608" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.608" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have header with key 'Content-Type'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Update an email campaign.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected response to have header with key 'Content-Type'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have header with key 'Content-Type'
+   at Object.eval sandbox-script.js:4:83).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Delete an email campaign" id="9056fa3e-67b1-4a53-898d-56e627994ac5" timestamp="2023-11-30T23:16:33.152Z" tests="3" failures="1" errors="0" time="0.186">
+    <testcase name="Verify Status Code" time="0.186" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.186" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.186" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'No Content' but got 'Forbidden'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Delete an email campaign.]]>
+        <![CDATA[Test description: Status code name has No Content.]]>
+        <![CDATA[Error message: expected response to have status reason 'No Content' but got 'Forbidden'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'No Content' but got 'Forbidden'
+   at Object.eval sandbox-script.js:3:84).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Send an email campaign immediately, based on campaignId" id="2945e8e7-d096-4cda-8420-8076a6fde962" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="1" errors="0" time="0.640">
+    <testcase name="Verify Status Code" time="0.640" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.640" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.640" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.640" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have header with key 'Content-Type'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Send an email campaign immediately, based on campaignId.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected response to have header with key 'Content-Type'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have header with key 'Content-Type'
+   at Object.eval sandbox-script.js:4:85).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Send an email campaign to your test list" id="f70fa244-b936-43f7-96b2-2a6254042585" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="1" errors="0" time="0.331">
+    <testcase name="Verify Status Code" time="0.331" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.331" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.331" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.331" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have header with key 'Content-Type'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Send an email campaign to your test list.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected response to have header with key 'Content-Type'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have header with key 'Content-Type'
+   at Object.eval sandbox-script.js:4:86).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Update an email campaign status" id="8ca516fe-44ed-41a7-becb-a99f282a3dbe" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="1" errors="0" time="0.220">
+    <testcase name="Verify Status Code" time="0.220" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.220" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.220" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.220" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have header with key 'Content-Type'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Marketing / Email Campaigns / Update an email campaign status.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected response to have header with key 'Content-Type'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have header with key 'Content-Type'
+   at Object.eval sandbox-script.js:4:87).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Send the report of a campaign" id="33356103-e59a-4274-8247-b46c60ce2ded" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="0" errors="0" time="0.475">
+    <testcase name="Verify Status Code" time="0.475" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.475" classname="SendInBlueApi"/>
+    <testcase name="Status code name has Ok" time="0.475" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.475" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Get an A/B test email campaign results" id="caf062f1-c8bf-45cb-ba56-9f5a2c04620c" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.226"/>
+  <testsuite name="Marketing / Email Campaigns / Get a shared template url" id="13be204a-ffd7-4762-84e6-f641cf9a0189" timestamp="2023-11-30T23:16:33.152Z" tests="5" failures="0" errors="0" time="0.251">
+    <testcase name="Verify Status Code" time="0.251" classname="SendInBlueApi"/>
+    <testcase name="Verify shared URL" time="0.251" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.251" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.251" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.251" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Export the recipients of an email campaign" id="050cfeed-fc58-43ba-85ab-ba39d9f8f7aa" timestamp="2023-11-30T23:16:33.152Z" tests="5" failures="0" errors="0" time="0.301">
+    <testcase name="Verify Status Code" time="0.301" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.301" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No OK" time="0.301" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.301" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.301" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Return all your created email campaigns" id="6bbc7f46-d2e6-4abc-8fc7-01de08b665b4" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="0" errors="0" time="0.593">
+    <testcase name="Verify Status Code" time="0.593" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.593" classname="SendInBlueApi"/>
+    <testcase name="Status code name has Ok" time="0.593" classname="SendInBlueApi"/>
+    <testcase name="Verify Count" time="0.593" classname="SendInBlueApi"/>
+    <testcase name="Verify Campaign with ID 3" time="0.593" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.593" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Create an email campaign" id="c11f9669-e58e-4c32-afb1-fd4e1d3927fa" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.523"/>
+  <testsuite name="Marketing / Email Campaigns / Upload an image to your account's image gallery" id="05656b1a-a9a7-40a5-8930-cf037f107eac" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.345"/>
+  <testsuite name="Marketing / SMS Campaigns / Returns the information for all your created SMS campaigns" id="5fafb05b-510b-49af-a6dc-e6fb864fe4c5" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.223"/>
+  <testsuite name="Marketing / SMS Campaigns / Creates an SMS campaign" id="0f41bad2-b7cb-437b-92ff-9281086131d3" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.542"/>
+  <testsuite name="Marketing / SMS Campaigns / Get an SMS campaign" id="99445c3e-d517-48aa-9279-0e79b37cae41" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.199"/>
+  <testsuite name="Marketing / SMS Campaigns / Update an SMS campaign" id="3e23a71e-bbc5-4c8c-98c0-2b9d885915d6" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.196"/>
+  <testsuite name="Marketing / SMS Campaigns / Delete an SMS campaign" id="4a230b90-3632-4986-af94-a6e7054b7dc4" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.199"/>
+  <testsuite name="Marketing / SMS Campaigns / Send your SMS campaign immediately" id="5835bd8c-750f-4fba-8a4d-35ad7ed5814a" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.204"/>
+  <testsuite name="Marketing / SMS Campaigns / Update a campaign's status" id="66791c9e-cdab-4a07-9b89-0eac9aa35766" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.202"/>
+  <testsuite name="Marketing / SMS Campaigns / Send a test SMS campaign" id="83f632ee-f3fe-42bf-86a4-48c44831fa54" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.190"/>
+  <testsuite name="Marketing / SMS Campaigns / Export an SMS campaign's recipients" id="0e0a60cf-2239-4606-b7fe-558a3088d6f9" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.191"/>
+  <testsuite name="Marketing / SMS Campaigns / Send an SMS campaign's report" id="876b5a57-5ff2-48cc-8695-82fc5eba038f" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.194"/>
+  <testsuite name="Marketing / WhatsApp Campaigns / Get a Whatsapp campaign" id="c98d213f-9fe6-44ad-91ff-dd94a839f4d1" timestamp="2023-11-30T23:16:33.152Z" tests="3" failures="0" errors="0" time="0.243">
+    <testcase name="Verify Status Code" time="0.243" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.243" classname="SendInBlueApi"/>
+    <testcase name="Status code name has Not Found" time="0.243" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Marketing / WhatsApp Campaigns / Delete a Whatsapp campaign" id="060ea2fb-fd4d-450b-97f4-8d27cbbf70d3" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.241"/>
+  <testsuite name="Contact management / Contacts / Get all the contacts" id="47159350-8636-45c8-8d5b-6581e4070067" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="0" errors="0" time="0.232">
+    <testcase name="Verify Status Code" time="0.232" classname="SendInBlueApi"/>
+    <testcase name="Verify Creation Date" time="0.232" classname="SendInBlueApi"/>
+    <testcase name="Verify ID" time="0.232" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.232" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.232" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.232" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Create a contact" id="fc6f0e16-6af8-4038-9a85-6ed07a7f09ee" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="0" errors="0" time="0.318">
+    <testcase name="Verify Status Code" time="0.318" classname="SendInBlueApi"/>
+    <testcase name="New Contact Id" time="0.318" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.318" classname="SendInBlueApi"/>
+    <testcase name="Status code name has Created" time="0.318" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 100ms" time="0.318" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.318" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Create Contact via DOI (Double-Opt-In) Flow" id="1c8b84e8-a33a-40d4-9b84-add22b66fe0b" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.216"/>
+  <testsuite name="Contact management / Contacts / Update multiple contacts" id="833ef797-eac9-451b-92c4-c2de933ec212" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.197"/>
+  <testsuite name="Contact management / Contacts / Export contacts" id="4ec43ba8-f165-4bcc-8529-c68b17b46a36" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.184"/>
+  <testsuite name="Contact management / Contacts / Import contacts" id="cd3ade52-9a1c-470c-afed-77d71c28c9e8" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.274"/>
+  <testsuite name="Contact management / Contacts / Get a contact's details" id="c88eae30-8a29-4d31-aa5a-0971287ebb77" timestamp="2023-11-30T23:16:33.152Z" tests="8" failures="0" errors="0" time="0.525">
+    <testcase name="Verify Status Code" time="0.525" classname="SendInBlueApi"/>
+    <testcase name="Verify that email macthes" time="0.525" classname="SendInBlueApi"/>
+    <testcase name="Verify Creation Date" time="0.525" classname="SendInBlueApi"/>
+    <testcase name="Verify ID" time="0.525" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.525" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.525" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 100ms" time="0.525" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Delete a contact" id="7320488b-9f4b-40fd-8be6-e41912433bbe" timestamp="2023-11-30T23:16:33.152Z" tests="5" failures="2" errors="0" time="0.217">
+    <testcase name="Verify Status Code" time="0.217" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.217" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.217" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have header with key 'Content-Type'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Contact management / Contacts / Delete a contact.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected response to have header with key 'Content-Type'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have header with key 'Content-Type'
+   at Object.eval sandbox-script.js:3:114).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has OK" time="0.217" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'OK' but got 'No Content'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Contact management / Contacts / Delete a contact.]]>
+        <![CDATA[Test description: Status code name has OK.]]>
+        <![CDATA[Error message: expected response to have status reason 'OK' but got 'No Content'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'OK' but got 'No Content'
+   at Object.eval sandbox-script.js:4:114).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has No Content" time="0.217" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Update a contact" id="551ce95b-f095-4f98-afda-4d9473074d86" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="1" errors="0" time="0.264">
+    <testcase name="Verify Status Code" time="0.264" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.264" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.264" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected 'Content-Type' response header to be 'application/json' but got 'text/plain; charset=utf-8'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Contact management / Contacts / Update a contact.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected 'Content-Type' response header to be 'application/json' but got 'text/plain; charset=utf-8'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'Content-Type' response header to be 'application/json' but got 'text/plain; charset=utf-8'
+   at Object.eval sandbox-script.js:3:115).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has No Content" time="0.264" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Get email campaigns' statistics for a contact" id="1bdf2a4e-8d54-40e0-8d3e-45d567b5eb30" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="0" errors="0" time="0.331">
+    <testcase name="Verify Status Code" time="0.331" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.331" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.331" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.331" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Get all folders" id="39a519cd-2776-4fce-980a-d220f98ba2db" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="0" errors="0" time="0.254">
+    <testcase name="Verify Status Code" time="0.254" classname="SendInBlueApi"/>
+    <testcase name="Verify name" time="0.254" classname="SendInBlueApi"/>
+    <testcase name="Verify Count" time="0.254" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.254" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.254" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 100ms" time="0.254" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Create a folder" id="a5fddc0a-b06c-4314-a5a7-9fed7a39c768" timestamp="2023-11-30T23:16:33.152Z" tests="5" failures="0" errors="0" time="0.224">
+    <testcase name="Verify Status Code" time="0.224" classname="SendInBlueApi"/>
+    <testcase name="Verify file ID" time="0.224" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.224" classname="SendInBlueApi"/>
+    <testcase name="Status code name has Created" time="0.224" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 100ms" time="0.224" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Returns a folder's details" id="91591ffd-4097-4cb3-a77c-81f1d903a341" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="0" errors="0" time="0.310">
+    <testcase name="Verify Status Code" time="0.310" classname="SendInBlueApi"/>
+    <testcase name="Verify folder ID" time="0.310" classname="SendInBlueApi"/>
+    <testcase name="Verify folder name" time="0.310" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.310" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.310" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 100ms" time="0.310" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Update a folder" id="b82c5609-0967-433d-a4ac-f964ca57c177" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="1" errors="1" time="0.192">
+    <system-err><![CDATA[Iteration: 0
+
+---
+prerequestScriptError: jsonData is not defined
+---
+]]></system-err>
+    <testcase name="Verify Status Code" time="0.192" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.192" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'No Content' but got 'Bad Request'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Contact management / Folders / Update a folder.]]>
+        <![CDATA[Test description: Status code name has No Content.]]>
+        <![CDATA[Error message: expected response to have status reason 'No Content' but got 'Bad Request'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'No Content' but got 'Bad Request'
+   at Object.eval sandbox-script.js:2:120).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.192" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.192" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Delete a folder (and all its lists)" id="686b5e11-ac92-45bc-9e4d-9c8d1e9cb8b9" timestamp="2023-11-30T23:16:33.152Z" tests="5" failures="1" errors="0" time="0.555">
+    <testcase name="Verify Status Code" time="0.555" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.555" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.555" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.555" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have header with key 'Content-Type'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Contact management / Folders / Delete a folder (and all its lists).]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected response to have header with key 'Content-Type'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have header with key 'Content-Type'
+   at Object.eval sandbox-script.js:4:121).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Get lists in a folder" id="094e33ad-15dd-45e6-8f33-bad26406f309" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="1" errors="0" time="0.209">
+    <testcase name="Verify Status Code" time="0.209" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.209" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.209" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'OK' but got 'Not Found'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Contact management / Folders / Get lists in a folder.]]>
+        <![CDATA[Test description: Status code name has OK.]]>
+        <![CDATA[Error message: expected response to have status reason 'OK' but got 'Not Found'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'OK' but got 'Not Found'
+   at Object.eval sandbox-script.js:3:122).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.209" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Get all the lists" id="7bd9c87f-99a7-4f24-a222-0d7bfe7434fd" timestamp="2023-11-30T23:16:33.152Z" tests="8" failures="0" errors="0" time="0.229">
+    <testcase name="Verify Status Code" time="0.229" classname="SendInBlueApi"/>
+    <testcase name="Verify lists 1st name &amp; ID" time="0.229" classname="SendInBlueApi"/>
+    <testcase name="Verify lists 2nd name &amp; ID" time="0.229" classname="SendInBlueApi"/>
+    <testcase name="Verify lists 3rd name &amp; ID" time="0.229" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.229" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.229" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 100ms" time="0.229" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Create a list" id="03887876-41b7-4392-9394-b96152abb15e" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="0" errors="0" time="0.251">
+    <testcase name="Verify Status Code" time="0.251" classname="SendInBlueApi"/>
+    <testcase name="Verify list ID" time="0.251" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.251" classname="SendInBlueApi"/>
+    <testcase name="Status code name has Created" time="0.251" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 100ms" time="0.251" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.251" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Get contacts in a list" id="be211cfa-360e-4ba7-9306-60aaa65ca9a8" timestamp="2023-11-30T23:16:33.152Z" tests="5" failures="0" errors="0" time="0.207">
+    <testcase name="Verify Status Code" time="0.207" classname="SendInBlueApi"/>
+    <testcase name="Verify response Body" time="0.207" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.207" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.207" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 100ms" time="0.207" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Add existing contacts to a list" id="79cae09a-aa60-44bf-8d8f-660fba721394" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="1" time="0.242">
+    <system-err><![CDATA[Iteration: 0
+
+---
+testScriptError: Invalid or unexpected token
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Delete a contact from a list" id="5c254695-1fb3-4029-82d6-c440da30c0a7" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.227"/>
+  <testsuite name="Contact management / Lists / Get a list's details" id="3f3e5b67-e22a-4059-b36c-01cc52b0a6af" timestamp="2023-11-30T23:16:33.152Z" tests="8" failures="0" errors="0" time="0.274">
+    <testcase name="Verify Status Code" time="0.274" classname="SendInBlueApi"/>
+    <testcase name="Verify ID" time="0.274" classname="SendInBlueApi"/>
+    <testcase name="Verify name" time="0.274" classname="SendInBlueApi"/>
+    <testcase name="Verify Dynamic List state" time="0.274" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.274" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.274" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.274" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.274" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Update a list" id="a90fd2f0-ecec-41b3-806c-3275bf2a377e" timestamp="2023-11-30T23:16:33.152Z" tests="7" failures="1" errors="0" time="0.185">
+    <testcase name="Verify Status Code" time="0.185" classname="SendInBlueApi"/>
+    <testcase name="Verify ID" time="0.185" classname="SendInBlueApi"/>
+    <testcase name="Verify name" time="0.185" classname="SendInBlueApi"/>
+    <testcase name="Verify Dynamic List state" time="0.185" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.185" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.185" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'OK' but got 'Bad Request'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Contact management / Lists / Update a list.]]>
+        <![CDATA[Test description: Status code name has OK.]]>
+        <![CDATA[Error message: expected response to have status reason 'OK' but got 'Bad Request'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'OK' but got 'Bad Request'
+   at Object.eval sandbox-script.js:6:129).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 100ms" time="0.185" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Delete a list" id="7a4d6d01-fb7f-4a36-a689-9e705b742c26" timestamp="2023-11-30T23:16:33.152Z" tests="3" failures="0" errors="0" time="0.339">
+    <testcase name="Verify Status Code" time="0.339" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.339" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.339" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / List all attributes" id="01c75b87-2499-4c71-bc45-2b03e77e0a07" timestamp="2023-11-30T23:16:33.152Z" tests="9" failures="7" errors="1" time="0.182">
+    <system-err><![CDATA[Iteration: 0
+
+---
+testScriptError: Cannot read properties of undefined (reading '0')
+---
+]]></system-err>
+    <testcase name="Verify Status Code" time="0.182" classname="SendInBlueApi"/>
+    <testcase name="Verify attribute first object list" time="0.182" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="Cannot read properties of undefined (reading '0')">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Contact management / Attributes / List all attributes.]]>
+        <![CDATA[Test description: Verify attribute first object list.]]>
+        <![CDATA[Error message: Cannot read properties of undefined (reading '0').]]>
+        <![CDATA[Stacktrace: TypeError: Cannot read properties of undefined (reading '0')
+   at Object.eval sandbox-script.js:2:131).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify Attributes 2nd name, READERS" time="0.182" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="Cannot read properties of undefined (reading '1')">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Contact management / Attributes / List all attributes.]]>
+        <![CDATA[Test description: Verify Attributes 2nd name, READERS.]]>
+        <![CDATA[Error message: Cannot read properties of undefined (reading '1').]]>
+        <![CDATA[Stacktrace: TypeError: Cannot read properties of undefined (reading '1')
+   at Object.eval sandbox-script.js:3:131).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify Attributes 3rd name, CLICKERS" time="0.182" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="Cannot read properties of undefined (reading '2')">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Contact management / Attributes / List all attributes.]]>
+        <![CDATA[Test description: Verify Attributes 3rd name, CLICKERS.]]>
+        <![CDATA[Error message: Cannot read properties of undefined (reading '2').]]>
+        <![CDATA[Stacktrace: TypeError: Cannot read properties of undefined (reading '2')
+   at Object.eval sandbox-script.js:4:131).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify Attributes 4th name, LASTNAME" time="0.182" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="Cannot read properties of undefined (reading '3')">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Contact management / Attributes / List all attributes.]]>
+        <![CDATA[Test description: Verify Attributes 4th name, LASTNAME.]]>
+        <![CDATA[Error message: Cannot read properties of undefined (reading '3').]]>
+        <![CDATA[Stacktrace: TypeError: Cannot read properties of undefined (reading '3')
+   at Object.eval sandbox-script.js:5:131).]]>
+      </failure>
+    </testcase>
+    <testcase name="Verify Attributes 5th name, FIRSTNAME" time="0.182" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="Cannot read properties of undefined (reading '4')">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Contact management / Attributes / List all attributes.]]>
+        <![CDATA[Test description: Verify Attributes 5th name, FIRSTNAME.]]>
+        <![CDATA[Error message: Cannot read properties of undefined (reading '4').]]>
+        <![CDATA[Stacktrace: TypeError: Cannot read properties of undefined (reading '4')
+   at Object.eval sandbox-script.js:6:131).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.182" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected 'Content-Type' response header to be 'application/json; charset=utf-8' but got 'application/json'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Contact management / Attributes / List all attributes.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected 'Content-Type' response header to be 'application/json; charset=utf-8' but got 'application/json'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'Content-Type' response header to be 'application/json; charset=utf-8' but got 'application/json'
+   at Object.eval sandbox-script.js:7:131).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has OK" time="0.182" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'OK' but got 'Unauthorized'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Contact management / Attributes / List all attributes.]]>
+        <![CDATA[Test description: Status code name has OK.]]>
+        <![CDATA[Error message: expected response to have status reason 'OK' but got 'Unauthorized'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'OK' but got 'Unauthorized'
+   at Object.eval sandbox-script.js:8:131).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 2000ms" time="0.182" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / Update contact attribute" id="eb95966e-e7c0-4fe2-b863-22355ef935b7" timestamp="2023-11-30T23:16:33.152Z" tests="3" failures="1" errors="0" time="0.187">
+    <testcase name="Verify Status Code" time="0.187" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.187" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'No Content' but got 'Unauthorized'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Contact management / Attributes / Update contact attribute.]]>
+        <![CDATA[Test description: Status code name has No Content.]]>
+        <![CDATA[Error message: expected response to have status reason 'No Content' but got 'Unauthorized'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'No Content' but got 'Unauthorized'
+   at Object.eval sandbox-script.js:2:132).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 500ms" time="0.187" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / Create contact attribute" id="d08b563b-7a8b-4a8f-9ab0-a9fd4519ed9e" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.187"/>
+  <testsuite name="Contact management / Attributes / Delete an attribute" id="690c45f6-2bb6-4a1a-9dbf-39d05a57d889" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.189"/>
+  <testsuite name="Accounts and settings / Webhooks / Get all webhooks" id="1ce17c64-f84a-435a-9818-d1f62c466b88" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="1" errors="0" time="0.207">
+    <testcase name="Status code is 200" time="0.207" classname="SendInBlueApi"/>
+    <testcase name="Verify URL" time="0.207" classname="SendInBlueApi"/>
+    <testcase name="Verify ID" time="0.207" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.207" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Accounts and settings / Webhooks / Get all webhooks.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'
+   at Object.eval sandbox-script.js:4:135).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has OK" time="0.207" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 100ms" time="0.207" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Accounts and settings / Webhooks / Create a webhook" id="7ad5b36e-888f-49cc-9c40-8c611fe2fea2" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="2" errors="0" time="0.542">
+    <testcase name="Status code is 200" time="0.542" classname="SendInBlueApi"/>
+    <testcase name="Verify ID from the response body" time="0.542" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.542" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Accounts and settings / Webhooks / Create a webhook.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'
+   at Object.eval sandbox-script.js:3:136).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has OK" time="0.542" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'OK' but got 'Created'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Accounts and settings / Webhooks / Create a webhook.]]>
+        <![CDATA[Test description: Status code name has OK.]]>
+        <![CDATA[Error message: expected response to have status reason 'OK' but got 'Created'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'OK' but got 'Created'
+   at Object.eval sandbox-script.js:4:136).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 100ms" time="0.542" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.542" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Accounts and settings / Webhooks / Get a webhook details" id="c11fb388-b1b2-4114-9eb9-c37c51a00aea" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="2" errors="0" time="1.274">
+    <testcase name="Status code is 200" time="1.274" classname="SendInBlueApi"/>
+    <testcase name="Verify URL" time="1.274" classname="SendInBlueApi"/>
+    <testcase name="Verify ID" time="1.274" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="1.274" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Accounts and settings / Webhooks / Get a webhook details.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'Content-Type' response header to be 'application/json' but got 'application/json; charset=utf-8'
+   at Object.eval sandbox-script.js:4:137).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has OK" time="1.274" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 100ms" time="1.274" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected 1274 to be below 1000">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Accounts and settings / Webhooks / Get a webhook details.]]>
+        <![CDATA[Test description: Response time is less than 100ms.]]>
+        <![CDATA[Error message: expected 1274 to be below 1000.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 1274 to be below 1000
+   at Object.eval sandbox-script.js:6:137).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Accounts and settings / Webhooks / Update a webhook" id="fafcc035-755f-446a-92d3-1b25fbbb8504" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="2" errors="0" time="2.100">
+    <testcase name="Verify that Status code is 200" time="2.100" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="2.100" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="2.100" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have header with key 'Content-Type'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Accounts and settings / Webhooks / Update a webhook.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected response to have header with key 'Content-Type'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have header with key 'Content-Type'
+   at Object.eval sandbox-script.js:3:138).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 100ms" time="2.100" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected 2100 to be below 1000">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Accounts and settings / Webhooks / Update a webhook.]]>
+        <![CDATA[Test description: Response time is less than 100ms.]]>
+        <![CDATA[Error message: expected 2100 to be below 1000.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 2100 to be below 1000
+   at Object.eval sandbox-script.js:4:138).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Accounts and settings / Webhooks / Delete a webhook" id="baf9aecc-c289-4e02-9915-31deb5232a6f" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="1" errors="0" time="0.538">
+    <testcase name="Status code is 200" time="0.538" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 500ms" time="0.538" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.538" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have header with key 'Content-Type'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Accounts and settings / Webhooks / Delete a webhook.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected response to have header with key 'Content-Type'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have header with key 'Content-Type'
+   at Object.eval sandbox-script.js:3:139).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has No Content" time="0.538" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Accounts and settings / Reseller / Credits / Add Email and/or SMS credits to a specific child account" id="9dde043c-38c7-4b39-814b-2cedd5d5bd3a" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.195"/>
+  <testsuite name="Accounts and settings / Reseller / Credits / Remove Email and/or SMS credits from a specific child account" id="e30359cb-aaaf-4128-b329-b033a8537d83" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.205"/>
+  <testsuite name="Accounts and settings / Reseller / IP management / Associate a dedicated IP to the child" id="ef222b94-cdc0-454c-91a1-044329b6ff78" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.213"/>
+  <testsuite name="Accounts and settings / Reseller / IP management / Dissociate a dedicated IP to the child" id="08483e25-ff09-4ef1-b0ca-d22d5c9cf4d9" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.232"/>
+  <testsuite name="Accounts and settings / Reseller / Domains / Get all sender domains for a specific child account" id="5cb48b70-922f-4d0e-bb67-d82e0842cb96" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.195"/>
+  <testsuite name="Accounts and settings / Reseller / Domains / Create a domain for a child account" id="50ff6c84-52e0-48ab-a560-c63978ff8b89" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.211"/>
+  <testsuite name="Accounts and settings / Reseller / Domains / Update the sender domain of reseller's child based on the childIdentifier and domainName passed" id="dc885d28-4411-494c-b35d-28d855fb41ee" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.251"/>
+  <testsuite name="Accounts and settings / Reseller / Domains / Delete the sender domain of the reseller child based on the childIdentifier and domainName passed" id="1bab92c8-27ee-4ce5-a752-8e737e890d6b" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.255"/>
+  <testsuite name="Accounts and settings / Reseller / Child accounts / Get a child account's details" id="52e0f45f-2feb-4b10-97a0-671bbca6fe26" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.222"/>
+  <testsuite name="Accounts and settings / Reseller / Child accounts / Update info of reseller's child based on the child identifier supplied" id="6107ecc3-b74a-4d2c-84dc-c26ad81b9512" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.235"/>
+  <testsuite name="Accounts and settings / Reseller / Child accounts / Delete a single reseller child based on the child identifier supplied" id="0b59f15e-9a51-4f2e-bde5-8b39a22ebde7" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.301"/>
+  <testsuite name="Accounts and settings / Reseller / Child accounts / Update info of reseller's child account status based on the identifier supplied" id="24b49461-af18-444a-8005-f045577291b2" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.203"/>
+  <testsuite name="Accounts and settings / Reseller / Child accounts / Get the status of a reseller's child account creation, whether it is successfully created (exists) or not based on the childIdentifier supplied" id="be8bf6d4-579a-40cd-be70-d78ef8e86c9e" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.496"/>
+  <testsuite name="Accounts and settings / Reseller / Child accounts / Get session token to access Sendinblue (SSO)" id="87fbbfcc-97a1-4bce-ba32-f24178e2f481" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.359"/>
+  <testsuite name="Accounts and settings / Reseller / Child accounts / Get the list of all children accounts" id="05245a26-4483-4af7-b9a3-b9a598fbd96d" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.296"/>
+  <testsuite name="Accounts and settings / Reseller / Child accounts / Creates a reseller child" id="e5392ef7-1db1-490b-847d-1e851f2be125" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.197"/>
+  <testsuite name="Accounts and settings / Process / Return all the processes for your account" id="51262c77-caa2-47ea-8339-ad2fdc860f74" timestamp="2023-11-30T23:16:33.152Z" tests="10" failures="0" errors="0" time="0.217">
+    <testcase name="Verify Status Code" time="0.217" classname="SendInBlueApi"/>
+    <testcase name="Verify Process ID" time="0.217" classname="SendInBlueApi"/>
+    <testcase name="Verify Processes 2nd items" time="0.217" classname="SendInBlueApi"/>
+    <testcase name="Verify Processes 3rd items" time="0.217" classname="SendInBlueApi"/>
+    <testcase name="Verify Processes 4th items" time="0.217" classname="SendInBlueApi"/>
+    <testcase name="Verify Processes 5th items" time="0.217" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.217" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.217" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.217" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Accounts and settings / Process / Return the informations for a process" id="d1a9a0f6-5008-4c5a-b0cd-7869758a9fa5" timestamp="2023-11-30T23:16:33.152Z" tests="7" failures="0" errors="0" time="0.234">
+    <testcase name="Verify Status Code" time="0.234" classname="SendInBlueApi"/>
+    <testcase name="Verify Process ID" time="0.234" classname="SendInBlueApi"/>
+    <testcase name="Verify status" time="0.234" classname="SendInBlueApi"/>
+    <testcase name="Verify name" time="0.234" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.234" classname="SendInBlueApi"/>
+    <testcase name="Status code name has OK" time="0.234" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.234" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Accounts and settings / Corporate / Get the details of requested master account" id="d11a42db-00a3-4072-972d-07176bc072a9" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.275"/>
+  <testsuite name="Accounts and settings / Corporate / Get the list of all the sub-accounts of the master account." id="5b3e9347-0ae0-444f-9863-c5d90d8e3922" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.205"/>
+  <testsuite name="Accounts and settings / Corporate / Create a new sub-account under a master account." id="5d68750d-8b7d-4d71-a119-fcc8bd3e10a1" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.312"/>
+  <testsuite name="Accounts and settings / Corporate / Generate SSO token to access Sendinblue" id="46f34a24-075c-4157-9f67-271c22892c58" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.186"/>
+  <testsuite name="Accounts and settings / Corporate / Get sub-account details" id="850b4cfb-aa80-4e8f-8247-85bac0953316" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.182"/>
+  <testsuite name="Accounts and settings / Corporate / Delete a sub-account" id="0a15e3a2-fe79-47d8-ab6c-e32f64aa26e3" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.264"/>
+  <testsuite name="Accounts and settings / Corporate / Update sub-account plan" id="b5069765-8b8a-427a-b476-ef3d5694567a" timestamp="2023-11-30T23:16:33.152Z" tests="0" failures="0" errors="0" time="0.261"/>
+  <testsuite name="Accounts and settings / Account data / Get your account information, plan and credits details" id="86b4d79a-5cce-46f8-916e-1371c258f1eb" timestamp="2023-11-30T23:16:33.152Z" tests="7" failures="1" errors="0" time="2.170">
+    <testcase name="Status code is 200" time="2.170" classname="SendInBlueApi"/>
+    <testcase name="Verify Email Address" time="2.170" classname="SendInBlueApi"/>
+    <testcase name="Verify Fiestname" time="2.170" classname="SendInBlueApi"/>
+    <testcase name="Verify lastname" time="2.170" classname="SendInBlueApi"/>
+    <testcase name="Verify Company name" time="2.170" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="2.170" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected 2170 to be below 1000">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Accounts and settings / Account data / Get your account information, plan and credits details.]]>
+        <![CDATA[Test description: Response time is less than 1000ms.]]>
+        <![CDATA[Error message: expected 2170 to be below 1000.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 2170 to be below 1000
+   at Object.eval sandbox-script.js:6:165).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code name has OK" time="2.170" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Accounts and settings / Senders / Get the list of all your senders" id="f33d2e42-35d7-4754-8f55-fe16109e1a11" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="0" errors="0" time="0.391">
+    <testcase name="Verify Status Code" time="0.391" classname="SendInBlueApi"/>
+    <testcase name="Verify First  ID" time="0.391" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.391" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.391" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Accounts and settings / Senders / Create a new sender" id="6f28747a-33db-4349-b9ad-c5704a79b200" timestamp="2023-11-30T23:16:33.152Z" tests="6" failures="0" errors="0" time="0.637">
+    <testcase name="Verify Status Code" time="0.637" classname="SendInBlueApi"/>
+    <testcase name="Verify ID" time="0.637" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.637" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 3000ms" time="0.637" classname="SendInBlueApi"/>
+    <testcase name="Successful POST request" time="0.637" classname="SendInBlueApi"/>
+    <testcase name="Status code name has Created" time="0.637" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Accounts and settings / Senders / Get all the dedicated IPs for your account" id="c43a95bd-63e3-4c0a-8048-0833de512a36" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="0" errors="0" time="0.293">
+    <testcase name="Verify Status Code" time="0.293" classname="SendInBlueApi"/>
+    <testcase name="Verify ips" time="0.293" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.293" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.293" classname="SendInBlueApi"/>
+  </testsuite>
+  <testsuite name="Accounts and settings / Senders / Update a sender" id="81cfbed2-ebbb-4030-b4b2-c0fde9fe5fde" timestamp="2023-11-30T23:16:33.152Z" tests="3" failures="1" errors="0" time="0.314">
+    <testcase name="Verify Status Code" time="0.314" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.314" classname="SendInBlueApi"/>
+    <testcase name="Status code name has No Content" time="0.314" classname="SendInBlueApi">
+      <failure type="AssertionFailure" message="expected response to have status reason 'No Content' but got 'Not Found'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 2e85ec72-8918-4f3d-b275-e0393a43664a.]]>
+        <![CDATA[Collection name: SendInBlueAPI.]]>
+        <![CDATA[Request name: Accounts and settings / Senders / Update a sender.]]>
+        <![CDATA[Test description: Status code name has No Content.]]>
+        <![CDATA[Error message: expected response to have status reason 'No Content' but got 'Not Found'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status reason 'No Content' but got 'Not Found'
+   at Object.eval sandbox-script.js:3:169).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Accounts and settings / Senders / Get all the dedicated IPs for a sender" id="b0efd56d-863e-477e-baab-9f3431687b10" timestamp="2023-11-30T23:16:33.152Z" tests="4" failures="0" errors="0" time="0.292">
+    <testcase name="Verify Status Code" time="0.292" classname="SendInBlueApi"/>
+    <testcase name="Verify Ips" time="0.292" classname="SendInBlueApi"/>
+    <testcase name="Content-Type is present" time="0.292" classname="SendInBlueApi"/>
+    <testcase name="Response time is less than 2000ms" time="0.292" classname="SendInBlueApi"/>
+  </testsuite>
+</testsuites>

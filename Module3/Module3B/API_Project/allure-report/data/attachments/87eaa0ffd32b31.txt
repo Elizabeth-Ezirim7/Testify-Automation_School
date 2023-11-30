@@ -1,0 +1,9 @@
+{
+    "id": "sB2EzBQk72XCQEnMx",
+    "type": "agent",
+    "text": "Your order has shipped! Here’s your tracking number : 9114 5847 3325 9667 4328 88",
+    "visitorId": "kZMvWhf8npAu3H6qd57w2Hv6nh6rnxvg",
+    "agentId": "655b2b95509bad4b6d08e90f_Dummy9vEF276higDNpKBpP6Q",
+    "createdAt": 1701386666690,
+    "isPushed": true
+}
