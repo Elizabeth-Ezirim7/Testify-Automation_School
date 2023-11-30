@@ -1,0 +1,1 @@
+{"senders":[{"id":1,"name":"Testaholics","email":"testcad77@gmail.com","active":true,"ips":[]},{"id":2,"name":"Newsletters","email":"newsletter@mycompany.com","active":false,"ips":[]},{"id":3,"name":"Newsletter","email":"newsletter@mycompany.com","active":false,"ips":[]}]}

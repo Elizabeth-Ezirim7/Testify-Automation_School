@@ -1,0 +1,1 @@
+{"id":80,"name":"Wordpress Contacts","startDate":"2023-05-31T23:24:58.485+01:00","endDate":"2023-12-01T00:24:58.485+01:00","totalBlacklisted":0,"totalSubscribers":0,"uniqueSubscribers":0,"folderId":6,"createdAt":"2023-12-01T00:24:56.000+01:00","campaignStats":[],"dynamicList":false}

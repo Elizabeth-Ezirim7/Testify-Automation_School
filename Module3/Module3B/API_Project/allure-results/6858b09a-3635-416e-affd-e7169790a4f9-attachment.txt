@@ -1,0 +1,8 @@
+level: log, messages: 200
+level: log, messages: 7
+level: log, messages: Email Transactional Template
+level: log, messages: This is for API automation for email transactional template
+level: log, messages: Testaholics
+level: log, messages: testcad77@gmail.com
+level: log, messages: 1
+level: log, messages: [object Object]

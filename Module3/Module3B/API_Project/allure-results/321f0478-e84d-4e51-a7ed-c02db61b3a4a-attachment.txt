@@ -1,0 +1,4 @@
+level: log, messages: 200
+level: log, messages: 80
+level: log, messages: Wordpress Contacts
+level: log, messages: false

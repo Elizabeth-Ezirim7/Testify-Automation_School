@@ -1,0 +1,1 @@
+{"code":"method_not_allowed","message":"Only inactive templates can be deleted. Use PUT /smtp/templates/{templateId} to make the template inactive"}

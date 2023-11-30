@@ -1,0 +1,1 @@
+level: log, messages: <202311302324.80150514550@smtp-relay.mailin.fr>

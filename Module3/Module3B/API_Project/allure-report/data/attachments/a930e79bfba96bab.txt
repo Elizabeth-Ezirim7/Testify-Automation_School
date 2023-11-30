@@ -1,0 +1,1 @@
+{"code":"invalid_parameter","message":"Contact already removed from list and/or does not exist"}
