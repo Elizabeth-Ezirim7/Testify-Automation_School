@@ -22,7 +22,7 @@ public class Task6 {
         // Use the reverse() method to reverse the string
         stringBuilder.reverse();
 
-        // Convert the StringBuilder back to a string
+        // Convert the StringBuilder
         return stringBuilder.toString();
     }
 
