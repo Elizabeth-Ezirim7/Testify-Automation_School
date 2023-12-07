@@ -25,7 +25,7 @@ public class Task9B {
         scanner.close();
 
         // Print a message when "testify" is entered
-        System.out.println("Congratulations! You entered 'testify'.");
+        System.out.println("Nice! You entered 'testify'.");
     }
 
 
