@@ -1,4 +1,4 @@
-package com.Testify;
+package Tasks;
 
 import java.util.Scanner;
 

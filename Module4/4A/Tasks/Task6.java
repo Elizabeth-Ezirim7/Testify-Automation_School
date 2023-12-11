@@ -1,4 +1,4 @@
-package com.Testify;
+package Tasks;
 
 public class Task6 {
     public static void main(String[] args) {
@@ -37,5 +37,3 @@ public class Task6 {
     }
 
 }
-
-

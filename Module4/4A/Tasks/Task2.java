@@ -1,4 +1,5 @@
-package com.Testify;
+package Tasks;
+
 //Print different Data types
 
 public class Task2 {
