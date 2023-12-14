@@ -1,5 +1,5 @@
 package Tasks.Task19.Task19c;
-
+//Task 19
 public class SecondName extends FirstName{
 
     public static void main(String[] args) {
