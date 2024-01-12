@@ -1,6 +1,6 @@
 
 //Reverse TestifyAutomation using recursion
-public class Task7 {
+public class Challenge7 {
     public static void main(String[] args) {
 
     String word = "TestifyAutomation";

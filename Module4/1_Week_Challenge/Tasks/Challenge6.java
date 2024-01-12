@@ -1,7 +1,7 @@
 import java.util.*;
 
 //Despite commuting at the peek hours, she was able to keep to time
-public class Task6 {
+public class Challenge6 {
     public static void main(String[] args) {
         String sentence = "Despite commuting at peek hours, she was able to keep to time";
         String[] words = sentence.split("\\s");

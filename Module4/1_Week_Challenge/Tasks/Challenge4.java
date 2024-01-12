@@ -1,5 +1,5 @@
 //Write a java code to check for the prime numbers between 1 - 100
-public class Task4 {
+public class Challenge4 {
     public static void main(String[] args) {
         int i, j, count;
 

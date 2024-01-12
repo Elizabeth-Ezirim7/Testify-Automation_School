@@ -1,7 +1,7 @@
 
 import java.util.*;
 //create an anagram buckets from a given input of array of words {"akka", "akak", "baab", "baba", "bbaa"};
-public class Task5 {
+public class Challenge5 {
     public static void main(String[] args) {
         String[] words = {"akka", "akak", "baab", "baba", "bbaa"};
         Map<String, List<String>> anagramBuckets = createAnagramBuckets(words);

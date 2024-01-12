@@ -1,9 +1,9 @@
 //Find 2 numbers of which the product is the maximum in an array
 
-public class Task3 {
+public class Challenge3 {
     public static void main(String[] args) {
         int[] array = {10, 5, 6, 9};
-        Task3 maxNumber = new Task3();
+        Challenge3 maxNumber = new Challenge3();
         maxNumber.findTwoMaxNumbers(array);
 
     }

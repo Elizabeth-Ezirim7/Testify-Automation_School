@@ -23,7 +23,7 @@ import org.openqa.selenium.Keys;
 
 public class Task7 {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\EEzirim\\Documents\\TESTIFY\\Testify-Automation_School\\Module4\\Module4B\\src\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\EEzirim\\Documents\\TESTIFY\\Testify-Automation_School\\Module4\\Module4B\\Tasks\\Driverschromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         //launch URl
