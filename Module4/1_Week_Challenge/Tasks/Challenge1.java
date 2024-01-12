@@ -1,4 +1,4 @@
-public class Task1 {
+public class Challenge1 {
     public static void main(String[] args) {
         // Check if "racecar" is a palindrome
         String word1 = "racecar";

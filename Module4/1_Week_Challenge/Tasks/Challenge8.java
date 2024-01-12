@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Task8 {
+public class Challenge8 {
     public static void main(String[] args) {
         int[] arr = {4, 2, 7, 9, 3, 6, 1, 5, 8, 2, 7, 1, 9, 3, 6, 1, 5, 8};
         countingSort(arr);

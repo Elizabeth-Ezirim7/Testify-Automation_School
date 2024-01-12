@@ -1,6 +1,6 @@
-//package Tasks;
+package Tasks;
 //I am the best Automation tester
-public class Task2 {
+public class Challenge2 {
     public static void main(String[] args) {
 
         String sentence = "I am the best Automation tester";

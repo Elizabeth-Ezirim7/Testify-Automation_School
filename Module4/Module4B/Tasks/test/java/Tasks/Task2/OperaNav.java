@@ -7,7 +7,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class OperaNav {
     public static void main(String[] args) {
-        System.setProperty("webdriver.edge.driver", "C:\\Users\\EEzirim\\Documents\\TESTIFY\\Testify-Automation_School\\Module4\\Module4B\\src\\msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver", "C:\\Users\\EEzirim\\Documents\\TESTIFY\\Testify-Automation_School\\Module4\\Module4B\\Tasks\\Drivers\\msedgedriver.exe");
         WebDriver driver = new EdgeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.opera.com/");
