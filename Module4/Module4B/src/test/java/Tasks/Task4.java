@@ -1,6 +1,9 @@
 package Tasks;
 
+
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.Alert;
@@ -18,10 +21,10 @@ public class Task4 {
         driver.get("http://demo.guru99.com/");
         //Click on the security Project menu.
         driver.findElement(By.xpath("//a[contains(text(),'Security Project')]")).click();
-        driver.switchTo().frame("image-with-cta-on-larger-screen");
-        ////*[@id="dismiss-button"]/div/span
+        driver.switchTo().alert().dismiss();
+        //driver.switchTo().frame("image-with-cta-on-larger-screen");
 
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
         driver.findElement(By.xpath("//*[@id=\"dismiss-button\"]/div/span")).click();;
 
         Thread.sleep(3000);
