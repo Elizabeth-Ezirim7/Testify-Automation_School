@@ -1,4 +1,4 @@
-package Tasks.Task2;
+package test.java.Tasks.Task2;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -6,7 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class FaceBookNav {
     public static void main(String[] args) {
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\EEzirim\\Documents\\TESTIFY\\Testify-Automation_School\\Module4\\Module4B\\Tasks\\Drivers\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "C:\\Users\\EEzirim\\Documents\\TESTIFY\\Testify-Automation_School\\Module4B\\Tasks\\test\\java\\Tasks\\Task1\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.get("https://www.facebook.com/");

@@ -1,4 +1,4 @@
-package Tasks;
+package test.java.Tasks;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
