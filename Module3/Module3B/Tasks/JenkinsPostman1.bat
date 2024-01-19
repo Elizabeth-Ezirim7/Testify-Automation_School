@@ -1,0 +1,1 @@
+newman run "C:\\Users\\EEzirim\\Documents\\TESTIFY\\Testify-Automation_School\Module3\\Module3B\\Tasks\\Task3.json" -e "C:\\Users\\EEzirim\\Documents\\TESTIFY\\Testify-Automation_School\\Module3\\Module3B\\Tasks\\DEV.postman_environment.json"
