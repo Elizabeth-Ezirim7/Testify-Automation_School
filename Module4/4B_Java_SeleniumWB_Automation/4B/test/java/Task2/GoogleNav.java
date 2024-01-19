@@ -1,4 +1,4 @@
-package test.java.Tasks.Task2;
+package test.java.Task2;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
