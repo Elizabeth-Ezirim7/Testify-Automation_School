@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MVN Command Line">
+    <test name="Homepage Test Cases">
+        <groups>
+            <run>
+                <include name="one"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="test.java.Task19_MVNCommandLine.Task17_TestSuite.ClassA_AFWindows"></class>
+            <class name="test.java.Task19_MVNCommandLine.Task18_POM.Product_Home"></class>
+        </classes>
+
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
