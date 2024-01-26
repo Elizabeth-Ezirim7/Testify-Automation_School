@@ -1,6 +1,7 @@
 package test.java.Task19_MVNCommandLine.Task18_POM;
 
 import main.java.org.example.PageObjects.SauceLoginPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -23,14 +24,16 @@ public class Product_Home {
         login.getPassWord().sendKeys("secret_sauce");
         login.getLogin().click();
         System.out.println("login is successful");
-        String expectedTitle = "Swag Labs";
-        String actualTitle = driver.getTitle();
+        //String expectedTitle = "Swag Labs";
+        //String actualTitle = driver.getTitle();
+        String pageText = driver.findElement(By.cssSelector(".app_logo")).getText();
         SoftAssert confirmHome = new SoftAssert();
-        confirmHome.assertEquals(actualTitle,expectedTitle);
+        confirmHome.assertEquals(pageText,"Swag Labs");
         System.out.println("This is the homepage for Sauce Demo");
         confirmHome.assertAll();
 
     }
+
 
     @Test
     public void closeBrowser(){

@@ -30,6 +30,7 @@ public class SauceDemoTest {
         login.getUserName().sendKeys("standard_user");
         login.getPassWord().sendKeys("secret_sauce");
         login.getLogin().click();
+        Thread.sleep(5000);
         System.out.println("login is successful");
 
     }
@@ -39,6 +40,7 @@ public class SauceDemoTest {
         ProductPage product = new ProductPage(driver);
         product.addToCart().click();
         product.clickCartIcon().click();
+        Thread.sleep(5000);
         System.out.println("Item selected successfully");
 
     }
@@ -53,6 +55,7 @@ public class SauceDemoTest {
         yourCart.clickCheckOutButton().click();
         System.out.println("Selected item successfully verified");
         confirm.assertAll();
+        Thread.sleep(5000);
 
 
     }
@@ -64,6 +67,7 @@ public class SauceDemoTest {
         checkoutObj.getLastName().sendKeys("Zaac");
         checkoutObj.getZipCode().sendKeys("12345");
         checkoutObj.clickContinue().click();
+        Thread.sleep(5000);
         System.out.println("CheckOut successfully clicked");
 
     }
@@ -78,6 +82,7 @@ public class SauceDemoTest {
         overviewObj.clickFinishButton().click();
         System.out.println("Selected item asserted successfully alongside click button");
         confirmTwo.assertAll();
+        Thread.sleep(5000);
 
     }
     @AfterClass

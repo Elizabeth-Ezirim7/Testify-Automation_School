@@ -24,9 +24,9 @@ public class Task16_TestNGAssert {
 
     @Test
     public void assertContact(){
-        String email = "info@testifyltd.co.uk";
+        String email = "info@testifyltd.com"; //info@testifyltd.com
         String Location = "Nigeria";
-        String phoneNumber = "(+234)904-882-0971";
+        String phoneNumber = "(+234)905-882-0971";
         SoftAssert contact = new SoftAssert();
         contact.assertEquals(email, "info@testifyltd.co.uk");
         contact.assertEquals(Location, "Nigeria");
@@ -34,11 +34,12 @@ public class Task16_TestNGAssert {
         System.out.println("Contact details asserted successfully");
         contact.assertAll();
 
-
-
     }
+
+
     @AfterClass
     public void closeBrowser(){
+
         driver.quit();
     }
 }
