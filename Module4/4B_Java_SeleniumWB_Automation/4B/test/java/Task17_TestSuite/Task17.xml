@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Task17Suite">
+    <test name="DemoPageElements">
+        <classes>
+            <class name="test.java.Task17_TestSuite.Elements"/>
+            <class name="test.java.Task17_TestSuite.Forms"/>
+            <class name="test.java.Task17_TestSuite.Widgets"/>
+            <class name="test.java.Task17_TestSuite.Interactions"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
