@@ -12,7 +12,7 @@ upper_case = tester.upper()
 print(upper_case)
 
 # Other functions
-#lowercase
+#lowercase and white space
 words = "   Isaac Is A Game Changer   "
 lower_case = words.lower()
 print(lower_case)
