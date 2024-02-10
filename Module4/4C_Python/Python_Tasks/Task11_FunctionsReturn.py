@@ -17,19 +17,14 @@ def add(num1, num2):
     print("The Result is", result)
 
 
-#Create a function that return the string value "Testify Python"
+# Create a function that return the string value "Testify Python"
 def getTexts():
- return  "Testify Python"
+    return "Testify Python"
 
 
 # Invoke/call the two functions
+
 add(20, 30)
 
 text = getTexts()
 print(text)
-
-
-
-
-
-
