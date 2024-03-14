@@ -6,7 +6,7 @@ from appium.options.common import AppiumOptions
 from appium.webdriver.common.appiumby import AppiumBy
 
 
-class DemoApp( unittest.TestCase ):
+class NegativeLoginTest( unittest.TestCase ):
 
     @classmethod
     def setUp(cls):
@@ -54,15 +54,15 @@ class DemoApp( unittest.TestCase ):
         password_field1.clear()
         time.sleep( 5 )
 
-    def test_case_2(self):
+        # def test_case_2(self):
         # 2nd negative login test case
         # Login with invalid username and valid password
-        hamburger_icon = self.driver.find_element( by=AppiumBy.ACCESSIBILITY_ID, value='open menu' )
+        """"hamburger_icon = self.driver.find_element( by=AppiumBy.ACCESSIBILITY_ID, value='open menu' )
         hamburger_icon.click()
         login_button1 = self.driver.find_element( by=AppiumBy.XPATH,
                                                   value='//android.view.ViewGroup[@content-desc="menu item log in"]' )
         login_button1.click()
-        time.sleep( 5 )
+        time.sleep( 5 )"""""
         username_field1 = self.driver.find_element( by=AppiumBy.XPATH,
                                                value='//android.widget.EditText[@content-desc="Username input field"]' )
         username_field1.send_keys( "Elizabeth" )
@@ -82,15 +82,15 @@ class DemoApp( unittest.TestCase ):
         password_field1.clear()
         time.sleep( 5 )
 
-    def test_case_3(self):
+        # def test_case_3(self):
         # 3rd negative login test case
         # Login with valid username and invalid password
-        hamburger_icon = self.driver.find_element( by=AppiumBy.ACCESSIBILITY_ID, value='open menu' )
+        """"hamburger_icon = self.driver.find_element( by=AppiumBy.ACCESSIBILITY_ID, value='open menu' )
         hamburger_icon.click()
         login_button1 = self.driver.find_element( by=AppiumBy.XPATH,
                                                   value='//android.view.ViewGroup[@content-desc="menu item log in"]' )
         login_button1.click()
-        time.sleep( 5 )
+        time.sleep( 5 )"""""
         username_field1 = self.driver.find_element( by=AppiumBy.XPATH,
                                                value='//android.widget.EditText[@content-desc="Username input field"]' )
         username_field1.send_keys( "bob@example.com" )
@@ -110,15 +110,15 @@ class DemoApp( unittest.TestCase ):
         password_field1.clear()
         time.sleep( 5 )
 
-    def test_case_4(self):
+        # def test_case_4(self):
         # 4th negative login test case
         # Login with empty username and valid password
-        hamburger_icon = self.driver.find_element( by=AppiumBy.ACCESSIBILITY_ID, value='open menu' )
+        """"hamburger_icon = self.driver.find_element( by=AppiumBy.ACCESSIBILITY_ID, value='open menu' )
         hamburger_icon.click()
         login_button1 = self.driver.find_element( by=AppiumBy.XPATH,
                                                   value='//android.view.ViewGroup[@content-desc="menu item log in"]' )
         login_button1.click()
-        time.sleep( 5 )
+        time.sleep( 5 )"""""
         username_field1 = self.driver.find_element( by=AppiumBy.XPATH,
                                                value='//android.widget.EditText[@content-desc="Username input field"]' )
         username_field1.send_keys( "" )
@@ -133,7 +133,7 @@ class DemoApp( unittest.TestCase ):
         invalid_credentials_msg1 = self.driver.find_element( by=AppiumBy.XPATH,
                                                         value='//android.widget.TextView[@text="Username is required"]' )
         get_Attribute1 = invalid_credentials_msg1.get_attribute( "text" )
-        print( " Empty Username:", get_Attribute1 )
+        print( "Empty Username:", get_Attribute1 )
         print( invalid_credentials_msg1.is_displayed() )
         time.sleep( 3 )
         password_field1.clear()

@@ -7,7 +7,6 @@ from appium.webdriver.common.appiumby import AppiumBy
 from appium.webdriver.common.touch_action import TouchAction
 
 
-
 class AppCheckOut( unittest.TestCase ):
 
     @classmethod
@@ -48,7 +47,7 @@ class AppCheckOut( unittest.TestCase ):
         loginPage_button1.click()
         time.sleep( 5 )
 
-    # def test_case_1_sort(self):
+        # def test_case_1_sort(self):
         sort_button = self.driver.find_element( by=AppiumBy.XPATH,
                                                 value='//android.view.ViewGroup[@content-desc="sort button"]' )
         sort_button.click()
@@ -171,7 +170,7 @@ class AppCheckOut( unittest.TestCase ):
         proceed_checkout_button.click()
         time.sleep( 5 )
 
-    # def test_case_3_checkout_form(self):
+        # def test_case_3_checkout_form(self):
         # FullName
         self.driver.swipe( start_x=500, start_y=1000, end_x=500, end_y=500, duration=800 )
 
@@ -255,7 +254,6 @@ class AppCheckOut( unittest.TestCase ):
         review_order_el.click()
         time.sleep( 5 )
 
-
         review_order_scroll = self.driver.find_element( by=AppiumBy.XPATH,
                                                         value='//android.widget.ScrollView[@content-desc="checkout review order screen"]' )
         get_Attribute = review_order_scroll.get_attribute( "content-desc" )
@@ -266,9 +264,9 @@ class AppCheckOut( unittest.TestCase ):
         place_order_el = self.driver.find_element( by=AppiumBy.XPATH,
                                                    value='//android.view.ViewGroup[@content-desc="Place Order button"]' )
         place_order_el.click()
-        time.sleep(5)
+        time.sleep( 5 )
 
-    #  def test_case_6_checkout_complete(self):
+        #  def test_case_6_checkout_complete(self):
 
         expected_title = "	Thank you for your order"
         actual_title = "	Thank you for your order"

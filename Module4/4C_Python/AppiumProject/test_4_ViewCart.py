@@ -125,7 +125,7 @@ class DemoApp_ViewCart( unittest.TestCase ):
         # time.sleep( 3 )
 
         # def test_case_5_assert(self):
-        self.driver.swipe( start_x=500, start_y=1000, end_x=1000, end_y=1000, duration=800 )
+        self.driver.swipe( start_x=500, start_y=1000, end_x=2000, end_y=2000, duration=800 )
         items_picked = self.driver.find_element( by=AppiumBy.XPATH,
                                                  value='//android.view.ViewGroup[@content-desc="checkout footer"]' )
         get_Attribute = items_picked.get_attribute( "content-desc" )
