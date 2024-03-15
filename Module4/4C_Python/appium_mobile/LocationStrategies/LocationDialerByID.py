@@ -19,19 +19,15 @@ def main():
     url = 'http://127.0.0.1:4723/wd/hub'
 
     driver = webdriver.Remote( url, options=AppiumOptions().load_capabilities( cap ) )
-    # time.sleep( 2 )
-    # Locate By Xpath
-    """"dialer_el = driver.find_element( by=AppiumBy.XPATH, value='//android.widget.TextView[@content-desc="Phone"]' )
-    dialer_el.click()
-    time.sleep( 2 )"""
 
-    keypad_el = driver.find_element( by=AppiumBy.XPATH,
-                                     value='/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/'
-                                           'android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/'
-                                           'android.view.ViewGroup[2]/android.widget.FrameLayout[2]/android.widget.FrameLayout' )
+    keypad_el = driver.find_element( by=AppiumBy.ID, value='com.android.dialer:id/fab' )
     keypad_el.click()
+    # find by classname/Tagname
+    frame_layout = driver.find_element( by=AppiumBy.ID, value='com.android.dialer:id/dialpad' )
+    number_buttons = frame_layout.find_elements(by=AppiumBy.CLASS_NAME, value="android.widget.LinearLayout")
+    for number_button in number_buttons:
+        number_button.click()
     time.sleep( 5 )
-    print( "Clicked on Element" )
     driver.quit()
 
 
