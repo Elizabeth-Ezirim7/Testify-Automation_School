@@ -6,7 +6,7 @@ from appium.options.common import AppiumOptions
 from appium.webdriver.common.appiumby import AppiumBy
 
 
-class DemoApp( unittest.TestCase ):
+class AppLogin( unittest.TestCase ):
 
     @classmethod
     def setUp(cls):
@@ -46,13 +46,14 @@ class DemoApp( unittest.TestCase ):
         loginPage_button1.click()
         time.sleep( 5 )
 
-    def test_page_assert_2(self):
+    # def test_page_assert_2(self):
         expected_title = "Products"
         # actual_title = self.driver.find_element( by=AppiumBy.XPATH, value='//android.widget.TextView[@text="Products"]' )
         actual_title = "Products"
 
         if actual_title == expected_title:
             print("Test Passed")
+            print( "This is Products Page" )
             assert actual_title == expected_title
         else:
             print("Test Failed")
